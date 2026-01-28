@@ -2,19 +2,34 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "XOOS Documentation",
+  "description": "Transform raw knowledge into AI-ready context with XOOS",
   "colors": {
     "primary": "#18181B",
     "light": "#3F3F46",
     "dark": "#09090B"
   },
   "favicon": "/favicon.svg",
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "codeblocks": {
+      "theme": {
+        "light": "github-light",
+        "dark": "github-dark"
+      }
+    }
+  },
   "navigation": {
     "tabs": [
       {
         "tab": "Documentation",
+        "icon": "book-open",
         "groups": [
           {
             "group": "Getting Started",
+            "icon": "rocket",
             "pages": [
               "index",
               "introduction/what-is-xoos",
@@ -24,6 +39,7 @@
           },
           {
             "group": "1. Knowledge Gathering",
+            "icon": "database",
             "pages": [
               "knowledge/index",
               "knowledge/collecting",
@@ -32,6 +48,7 @@
           },
           {
             "group": "2. Define Hierarchy",
+            "icon": "git-branch",
             "pages": [
               "hierarchy/index",
               "hierarchy/workstreams",
@@ -41,6 +58,7 @@
           },
           {
             "group": "3. Map Knowledge",
+            "icon": "link",
             "pages": [
               "mapping/index",
               "mapping/linking-knowledge"
@@ -48,6 +66,7 @@
           },
           {
             "group": "4. Step Guides",
+            "icon": "file-text",
             "pages": [
               "step-guides/index",
               "step-guides/writing",
@@ -56,6 +75,7 @@
           },
           {
             "group": "Resources",
+            "icon": "book",
             "pages": [
               "resources/glossary"
             ]
@@ -64,15 +84,18 @@
       },
       {
         "tab": "Guides",
+        "icon": "compass",
         "groups": [
           {
             "group": "Overview",
+            "icon": "map",
             "pages": [
               "guides/index"
             ]
           },
           {
             "group": "Context Engineering",
+            "icon": "brain",
             "pages": [
               "guides/core-principles",
               "guides/best-practices",
@@ -83,9 +106,11 @@
       },
       {
         "tab": "API Reference",
+        "icon": "square-terminal",
         "groups": [
           {
             "group": "API",
+            "icon": "code",
             "pages": [
               "api/index"
             ]
@@ -94,9 +119,11 @@
       },
       {
         "tab": "Changelog",
+        "icon": "history",
         "groups": [
           {
             "group": "Updates",
+            "icon": "sparkles",
             "pages": [
               "changelog/index"
             ]
@@ -107,14 +134,57 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://cxai.studio"
   },
   "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@xtendops.com"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Go to XOOS",
       "href": "https://cxai.studio"
     }
   },
-  "footer": {}
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/xtendops",
+      "website": "https://xtendops.com"
+    },
+    "links": [
+      {
+        "header": "Product",
+        "items": [
+          {
+            "label": "XOOS Platform",
+            "href": "https://cxai.studio"
+          },
+          {
+            "label": "About XtendOps",
+            "href": "https://xtendops.com"
+          }
+        ]
+      },
+      {
+        "header": "Support",
+        "items": [
+          {
+            "label": "Contact Us",
+            "href": "mailto:support@xtendops.com"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/xtendops"
+          }
+        ]
+      }
+    ]
+  },
+  "contextual": {
+    "options": ["copy", "view", "claude"]
+  }
 }
