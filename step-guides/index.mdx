@@ -1,148 +1,145 @@
 ---
-title: "Step Guides Overview"
-description: "Understanding step guides and their role in AI agent context"
+title: "Step Guides"
+description: "Creating AI-ready procedural content"
 ---
 
 # Step Guides
 
-Step guides are procedural documents that provide step-by-step instructions for handling specific scenarios. They are the primary source of guidance for AI agents when helping customers.
+Step Guides are the **finished product** of context engineering. They are structured, procedural documents that AI agents actually use to help users.
 
-## What is a Step Guide?
+## The Key Distinction
 
-A step guide tells an agent (human or AI) exactly how to handle a situation:
+<Warning>
+**Remember**: Knowledge documents are raw materials. Step Guides are the processed, AI-ready output.
 
-- Step-by-step instructions
-- Decision points and branches
-- Scripts and language to use
-- Escalation criteria
-- Related information to reference
+- **Knowledge**: What you collect (ingredients)
+- **Step Guides**: What AI uses (finished dish)
+</Warning>
 
-## Step Guides vs. Knowledge Documents
+## What Makes a Step Guide?
 
-| Step Guides | Knowledge Documents |
-|-------------|---------------------|
-| Procedural | Informational |
-| "Do this, then this" | "Here's the policy" |
-| Linked 1:1 to sub-scenarios | Linked many-to-many |
-| Versioned | Not versioned |
-| Active guidance | Reference material |
+Step Guides are:
 
-## Key Features
+### Structured
+- Clear step-by-step format
+- Consistent organization
+- Predictable layout
 
-### Versioning
+### Procedural
+- Action-oriented instructions
+- Decision points clearly marked
+- Outcomes specified
 
-Step guides support full version control:
+### AI-Ready
+- Written for AI consumption
+- Unambiguous language
+- Complete information
 
+### Versioned
 - Track changes over time
-- Add version comments explaining updates
-- View historical versions
-- Maintain audit trail
+- Historical versions preserved
+- Clear change documentation
 
-[Learn more about versioning](/step-guides/versioning)
+## One Guide Per Scenario
 
-### Rich Content
+Every scenario gets exactly **one** Step Guide. This 1:1 relationship ensures:
 
-The step guide editor supports:
+- **No ambiguity**: AI knows exactly which guide to use
+- **Clear maintenance**: Updates go to one place
+- **Consistent responses**: Same situation, same procedure
 
-- Formatted text (bold, italic, lists)
-- Headings and structure
-- Tables for decision matrices
-- Links to other resources
-- Code blocks for technical content
+## The Writing Process
 
-### Linking
+### 1. Gather Your References
 
-Each step guide can be linked to sub-scenarios:
+Before writing, collect:
+- Knowledge documents linked to the scenario
+- The scenario's description
+- Any existing procedures or notes
 
-```
-Step Guide: Password Reset Process
-└── Linked Sub-Scenarios:
-    ├── Forgot Password
-    ├── Password Expired
-    └── Locked Account
-```
+### 2. Understand the Goal
+
+What should happen when this guide is followed correctly?
+- What's the desired outcome?
+- What does success look like?
+
+### 3. Write the Steps
+
+Create clear, actionable instructions:
+- Start with prerequisites
+- Provide step-by-step actions
+- Include decision points
+- Define escalation criteria
+
+### 4. Test and Refine
+
+Review the guide:
+- Can you follow it without confusion?
+- Does it cover edge cases?
+- Is anything ambiguous?
 
 ## Step Guide Structure
 
-A well-structured step guide includes:
-
-### Title
-
-Clear, action-oriented title describing what the guide covers.
-
-**Examples:**
-- "Processing Customer Returns"
-- "Troubleshooting Login Issues"
-- "Handling Subscription Cancellations"
-
-### Description
-
-Brief summary of when to use this guide and what it covers.
-
-### Content
-
-The main instructional content, typically organized as:
+A typical Step Guide includes:
 
 ```
-## Prerequisites
-What you need before starting
+Title: [Clear, action-oriented title]
 
-## Steps
-1. First step
-2. Second step
-3. Third step
+Description: When and why to use this guide
 
-## Decision Points
-### If [condition]
-- Take action A
+Prerequisites:
+- What's needed before starting
+- Required access or permissions
 
-### If [other condition]
-- Take action B
+Steps:
+1. First action
+2. Second action
+3. Decision point: If X, do Y; if Z, do W
+4. Continue...
 
-## Escalation
-When and how to escalate
+Escalation:
+- When to escalate
+- Who to escalate to
 
-## Related Resources
-Links to policies, tools, etc.
+Related Information:
+- Links to policies or references
 ```
 
-## Viewing Step Guides
+## Currently Manual
 
-Navigate to **Knowledge** > **Step Guides** to see all guides.
+Today, writing Step Guides is a manual process. You:
+1. Review the linked knowledge
+2. Synthesize the information
+3. Write clear procedures
 
-The list shows:
-- Title and description
-- Current version
-- Last updated date
-- Status (active/inactive)
+<Note>
+**Coming Soon**: AI-assisted guide writing will use your mapped knowledge to help generate initial drafts. You'll review and refine rather than write from scratch.
+</Note>
 
-## How AI Agents Use Step Guides
+## Why Step Guides Matter
 
-When an AI agent identifies a sub-scenario:
+When an AI agent encounters a scenario:
 
-1. **Retrieves linked step guide** - Gets the current version
-2. **Follows the structure** - Uses steps as procedural guidance
-3. **Makes decisions** - Uses decision points to branch
-4. **References knowledge** - Links to additional context
-5. **Knows when to escalate** - Follows escalation criteria
+1. **Identifies the scenario** from the user's inquiry
+2. **Retrieves the linked Step Guide**
+3. **Follows the procedure** to help the user
+4. **Applies the guidance** consistently
 
-## Best Practices
+Good Step Guides = Consistent, accurate AI responses
 
-### Writing Effective Guides
+## Quality Standards
 
-- **Be specific** - Include exact steps, not vague directions
-- **Cover edge cases** - Address common variations
-- **Use consistent language** - Match your support tone
-- **Keep it current** - Update when processes change
+Step Guides should be:
 
-### Organization
-
-- One guide per procedure
-- Link to multiple sub-scenarios if appropriate
-- Cross-reference related guides
-- Archive outdated guides
+| Quality | Description |
+|---------|-------------|
+| **Complete** | All steps included, no gaps |
+| **Clear** | Unambiguous language, specific actions |
+| **Accurate** | Reflects current policies and procedures |
+| **Consistent** | Same format across all guides |
+| **Maintained** | Updated when procedures change |
 
 ## Next Steps
 
-- [Creating Step Guides](/step-guides/creating)
-- [Version Management](/step-guides/versioning)
+1. [Writing Step Guides](/step-guides/writing) - Detailed writing guidance
+2. [Version Management](/step-guides/versioning) - Managing updates over time

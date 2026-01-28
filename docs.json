@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "XOOS Documentation",
   "colors": {
-    "primary": "#1E40AF",
-    "light": "#3B82F6",
-    "dark": "#1E3A8A"
+    "primary": "#18181B",
+    "light": "#3F3F46",
+    "dark": "#09090B"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -17,45 +17,40 @@
             "group": "Getting Started",
             "pages": [
               "index",
-              "getting-started/quickstart",
-              "getting-started/concepts"
+              "introduction/what-is-xoos",
+              "introduction/quickstart",
+              "introduction/the-process"
             ]
           },
           {
-            "group": "Workstreams",
-            "pages": [
-              "workstreams/index",
-              "workstreams/creating",
-              "workstreams/metrics"
-            ]
-          },
-          {
-            "group": "Contact Drivers",
-            "pages": [
-              "contact-drivers/index",
-              "contact-drivers/managing"
-            ]
-          },
-          {
-            "group": "Sub-Scenarios",
-            "pages": [
-              "sub-scenarios/index",
-              "sub-scenarios/linking"
-            ]
-          },
-          {
-            "group": "Knowledge Base",
+            "group": "1. Knowledge Gathering",
             "pages": [
               "knowledge/index",
-              "knowledge/documents",
-              "knowledge/file-uploads"
+              "knowledge/collecting",
+              "knowledge/categorizing"
             ]
           },
           {
-            "group": "Step Guides",
+            "group": "2. Define Hierarchy",
+            "pages": [
+              "hierarchy/index",
+              "hierarchy/workstreams",
+              "hierarchy/contact-drivers",
+              "hierarchy/scenarios"
+            ]
+          },
+          {
+            "group": "3. Map Knowledge",
+            "pages": [
+              "mapping/index",
+              "mapping/linking-knowledge"
+            ]
+          },
+          {
+            "group": "4. Step Guides",
             "pages": [
               "step-guides/index",
-              "step-guides/creating",
+              "step-guides/writing",
               "step-guides/versioning"
             ]
           },
@@ -63,6 +58,47 @@
             "group": "Resources",
             "pages": [
               "resources/glossary"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "guides/index"
+            ]
+          },
+          {
+            "group": "Context Engineering",
+            "pages": [
+              "guides/core-principles",
+              "guides/best-practices",
+              "guides/common-pitfalls"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API",
+            "pages": [
+              "api/index"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "changelog/index"
             ]
           }
         ]

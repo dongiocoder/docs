@@ -1,0 +1,159 @@
+---
+title: "Define Hierarchy"
+description: "Creating structure with Workstreams, Contact Drivers, and Scenarios"
+---
+
+# Define Hierarchy
+
+The hierarchy is the backbone of your context engineering project. It organizes your domain into a clear structure that enables AI to navigate and find the right guidance.
+
+## The Three Levels
+
+```
+Workstream (Broad Area)
+└── Contact Driver (Category)
+    └── Scenario (Specific Situation)
+```
+
+### Workstreams
+
+The highest level. Represents broad operational areas.
+
+**Examples:**
+- Customer Support Chat
+- Sales Inquiries
+- HR Questions
+- IT Help Desk
+
+### Contact Drivers
+
+Categories within a workstream. Represents the main reasons someone reaches out.
+
+**Examples under "Customer Support":**
+- Order Issues
+- Account Problems
+- Billing Questions
+- Product Returns
+
+### Scenarios
+
+Specific situations within a contact driver. The most granular level.
+
+**Examples under "Order Issues":**
+- Cancel Order
+- Modify Order
+- Track Shipment
+- Report Missing Items
+
+## Why Structure Matters
+
+A good hierarchy provides:
+
+### Scalability
+- Add new scenarios without chaos
+- Grow from 10 to 1000 scenarios manageably
+- Multiple team members can work independently
+
+### Clarity
+- Everyone knows where things belong
+- No confusion about which guide applies
+- Easy to identify gaps
+
+### AI Navigation
+- AI can quickly narrow down to the right scenario
+- Clear path from broad to specific
+- Consistent responses across situations
+
+## Two Approaches
+
+### 1. Mirror the Client's Structure
+
+If the client already has categories, queues, or organizational structures:
+
+**Pros:**
+- Familiar to existing team
+- Matches current workflows
+- Easier adoption
+
+**Cons:**
+- May inherit suboptimal structure
+- Legacy categories may not fit AI well
+
+### 2. Design Optimal Structure
+
+Start fresh based on the knowledge gathered:
+
+**Pros:**
+- Optimized for AI
+- Clean, logical organization
+- No legacy baggage
+
+**Cons:**
+- Requires more upfront analysis
+- May differ from existing processes
+
+<Tip>
+There's no wrong choice. Pick the approach that works for your situation. You can always refine the structure later.
+</Tip>
+
+## Designing Your Hierarchy
+
+### Start with Outcomes
+
+Ask: "What is someone trying to accomplish?"
+
+Instead of organizing by department or system, organize by user goals:
+
+```
+❌ Organized by system:
+- Shopify Issues
+- Zendesk Issues
+- Payment Gateway Issues
+
+✅ Organized by goal:
+- Order Management
+- Account Access
+- Payment Problems
+```
+
+### Keep It Balanced
+
+Aim for similar depth across the hierarchy:
+
+```
+❌ Unbalanced:
+- Workstream A
+  - 2 contact drivers
+    - 5 scenarios each
+- Workstream B
+  - 15 contact drivers
+    - 50 scenarios each
+
+✅ Balanced:
+- Workstream A
+  - 5 contact drivers
+    - 8-12 scenarios each
+- Workstream B
+  - 6 contact drivers
+    - 8-12 scenarios each
+```
+
+### Avoid Overlap
+
+Each scenario should be distinct:
+
+```
+❌ Overlapping:
+- Scenario: Cancel Order
+- Scenario: Order Cancellation Request
+
+✅ Distinct:
+- Scenario: Cancel Order (Not Shipped)
+- Scenario: Cancel Order (Already Shipped)
+```
+
+## Next Steps
+
+1. [Create Workstreams](/hierarchy/workstreams)
+2. [Add Contact Drivers](/hierarchy/contact-drivers)
+3. [Define Scenarios](/hierarchy/scenarios)

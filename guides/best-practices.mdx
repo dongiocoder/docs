@@ -1,0 +1,283 @@
+---
+title: "Best Practices"
+description: "Proven approaches for effective context engineering"
+---
+
+# Best Practices
+
+These practices have been refined through real-world context engineering projects. Apply them to make your work more efficient and effective.
+
+## Knowledge Gathering
+
+### Cast a Wide Net First
+
+Collect more than you think you need:
+- Request all documentation, even if it seems tangential
+- Interview subject matter experts
+- Document tribal knowledge
+- Include edge cases and exceptions
+
+You can always discard irrelevant material, but missing knowledge is hard to recover.
+
+### Create a Knowledge Checklist
+
+Before declaring knowledge gathering "complete":
+
+```
+□ Training materials (all departments)
+□ SOPs and process docs
+□ Policy documents
+□ Templates and macros
+□ FAQ documents
+□ System documentation
+□ Tribal knowledge documented
+□ Edge cases noted
+□ Stakeholder sign-off
+```
+
+### Tag Everything
+
+Use consistent tags from the start:
+- `source:training`, `source:wiki`, `source:interview`
+- `status:verified`, `status:needs-review`
+- `topic:orders`, `topic:returns`
+
+Tags make filtering and organizing much easier later.
+
+## Hierarchy Design
+
+### Start with the 80/20 Rule
+
+Design for the 80% of common scenarios first:
+
+1. Identify the most frequent inquiry types
+2. Build hierarchy for those first
+3. Add edge cases and exceptions later
+
+### Use Consistent Naming
+
+Establish a naming convention and enforce it:
+
+```
+Pattern: [Action] [Subject] ([Qualifier])
+
+Examples:
+✓ Cancel Order (Before Shipping)
+✓ Process Return (Standard)
+✓ Reset Password (After Lockout)
+
+Not:
+✗ Order Cancellation
+✗ When customer wants return
+✗ password reset process
+```
+
+### Design for the Future
+
+Leave room to grow:
+- Avoid overly specific scenario names
+- Keep workstreams broad enough to expand
+- Consider where new scenarios might fit
+
+## Mapping
+
+### Map as You Go
+
+Don't save all mapping for the end:
+- Link documents to scenarios as you create them
+- Review mappings when adding new knowledge
+- Update mappings when scenarios change
+
+### Use a Coverage Matrix
+
+Track what's mapped where:
+
+| Scenario | Primary SOP | Policies | Templates | Complete? |
+|----------|-------------|----------|-----------|-----------|
+| Cancel Order | ✓ | ✓ | ✓ | ✓ |
+| Modify Order | ✓ | ✗ | ✓ | No |
+| Track Order | ✓ | - | - | ✓ |
+
+### Link Conservatively
+
+Only link documents that are directly relevant:
+- Would someone handling this scenario actually reference this?
+- Does this document provide essential information?
+- Is this a primary source or just tangentially related?
+
+## Writing Step Guides
+
+### Use Templates
+
+Create a template for consistency:
+
+```markdown
+# [Scenario Name]
+
+## When to Use
+[Brief description]
+
+## Prerequisites
+- [Requirement 1]
+- [Requirement 2]
+
+## Steps
+1. [First action]
+2. [Second action]
+3. [Decision point]
+
+## If [Condition]
+[Alternative path]
+
+## Escalation
+[When and to whom]
+
+## Related
+- [Link 1]
+- [Link 2]
+```
+
+### Write for AI, Not Humans
+
+AI needs different things than humans:
+
+| Human-Friendly | AI-Friendly |
+|----------------|-------------|
+| "Use common sense" | Explicit decision criteria |
+| "As usual" | Specific step-by-step |
+| Implied context | Stated prerequisites |
+| Flexible language | Precise instructions |
+
+### Include Decision Trees
+
+For complex scenarios, make decisions explicit:
+
+```
+IF order has not shipped:
+  → Process immediate cancellation
+  → Initiate full refund
+
+IF order has shipped but not delivered:
+  → Cannot cancel
+  → Offer return once delivered
+  → Provide tracking info
+
+IF order is delivered:
+  → Redirect to return process
+```
+
+### Test Your Guides
+
+Before considering a guide complete:
+1. Walk through it yourself step by step
+2. Have someone unfamiliar test it
+3. Run it through the AI agent
+4. Note any confusion or failures
+5. Refine and repeat
+
+## Team Collaboration
+
+### Assign Ownership
+
+For each area:
+- Who is responsible for maintaining it?
+- Who reviews changes?
+- Who approves new content?
+
+### Establish Review Processes
+
+Before publishing changes:
+- SME review for accuracy
+- Peer review for clarity
+- Test for AI effectiveness
+
+### Document Your Decisions
+
+Keep notes on why things are structured as they are:
+- "Split this into two scenarios because the refund process differs"
+- "Combined these because the procedure is identical"
+- "Named this way to match the client's terminology"
+
+## Maintenance
+
+### Schedule Regular Reviews
+
+Set a cadence:
+- Weekly: Check for urgent updates
+- Monthly: Review high-volume scenarios
+- Quarterly: Full audit of hierarchy
+
+### Track What Changes
+
+When something changes:
+1. Update the Step Guide
+2. Create a new version with clear comment
+3. Notify relevant team members
+4. Test the updated guide
+
+### Watch for Signals
+
+Signs that content needs updating:
+- AI giving outdated information
+- Customer complaints about incorrect guidance
+- Policy changes announced
+- New systems or tools deployed
+
+## Scaling Tips
+
+### Parallelize Work
+
+Multiple people can work simultaneously:
+- Different workstreams assigned to different people
+- SMEs write guides in their area
+- Central team reviews for consistency
+
+### Batch Similar Tasks
+
+Group similar work together:
+- Write all guides for one contact driver at once
+- Map all documents of one type together
+- Review all scenarios in one workstream together
+
+### Automate What You Can
+
+Look for opportunities:
+- Template generation
+- Consistency checking
+- Coverage reporting
+- Version tracking
+
+## Quick Reference
+
+<Accordion title="Best Practices Checklist">
+**Knowledge Gathering**
+- [ ] Collected from all sources
+- [ ] Tagged consistently
+- [ ] Stakeholder verified
+
+**Hierarchy**
+- [ ] Follows naming convention
+- [ ] Covers 80% of common scenarios
+- [ ] Room for growth
+
+**Mapping**
+- [ ] Coverage matrix maintained
+- [ ] Only relevant links
+- [ ] No orphaned documents
+
+**Step Guides**
+- [ ] Follows template
+- [ ] AI-friendly language
+- [ ] Decision trees included
+- [ ] Tested end-to-end
+
+**Team**
+- [ ] Ownership assigned
+- [ ] Review process in place
+- [ ] Decisions documented
+
+**Maintenance**
+- [ ] Review schedule set
+- [ ] Change tracking active
+- [ ] Signals monitored
+</Accordion>

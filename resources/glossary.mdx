@@ -1,133 +1,122 @@
 ---
 title: "Glossary"
-description: "Definitions of key terms used in XOOS Context Engineering"
+description: "Key terms used in XOOS and context engineering"
 ---
 
 # Glossary
 
-Key terms and definitions used in XOOS Context Engineering.
+Key terms and definitions used in XOOS and context engineering.
+
+---
 
 ## A
 
-### AHT (Average Handle Time)
-The average time taken to resolve a customer contact, including talk time, hold time, and after-contact work.
-
 ### AI Agent
-An automated system powered by artificial intelligence that can handle customer inquiries using the context you've configured in XOOS.
+An automated system powered by artificial intelligence that uses your Step Guides to help users. AI agents navigate your hierarchy to find the right guidance for each situation.
+
+### AI-Ready Content
+Content that has been structured and written specifically for AI agents to use effectively. Step Guides are AI-ready; raw Knowledge documents are not.
+
+---
 
 ## C
 
 ### Channel
-The communication medium for customer interactions: chat, email, voice, messaging, social, etc.
+The communication medium used for interactions: chat, email, voice, messaging, social, etc.
 
 ### Contact Driver
-A category representing a primary reason customers contact support. Sits between workstreams and sub-scenarios in the hierarchy.
+The second level of the context hierarchy. Represents a category of inquiries or reasons someone reaches out. Examples: "Order Issues", "Account Problems", "Billing Questions".
 
 ### Context Engineering
-The practice of organizing support knowledge into a structured hierarchy that AI agents can understand and use effectively.
+The practice of organizing knowledge into a structured format that AI agents can use effectively. Involves gathering knowledge, defining hierarchy, mapping content, and writing Step Guides.
 
-### Context Hierarchy
-The three-level structure of Workstream → Contact Driver → Sub-Scenario used to organize support knowledge.
+### Coverage
+The extent to which your scenarios have the necessary knowledge and Step Guides. Full coverage means every scenario has linked knowledge and a completed Step Guide.
 
-### CSAT (Customer Satisfaction)
-A metric measuring customer satisfaction, typically collected via post-interaction surveys.
-
-### Current Version
-The active, editable version of a step guide. Historical versions are frozen.
-
-## F
-
-### FCR (First Contact Resolution)
-The percentage of customer inquiries resolved on the first interaction without requiring follow-up.
+---
 
 ## H
 
-### Historical Version
-A frozen, read-only snapshot of a previous step guide version.
+### Hierarchy
+The three-level structure used to organize your domain: Workstream → Contact Driver → Scenario. This structure enables AI to navigate from broad to specific.
 
-## I
-
-### Inbound
-Customer-initiated contacts where the support team responds to incoming requests.
-
-### Integration
-A connection to an external system (CRM, order management, etc.) used in handling customer inquiries.
+---
 
 ## K
 
-### Knowledge Base
-The collection of reference documents, policies, and informational content in XOOS.
+### Knowledge
+Raw source materials collected during the first phase of context engineering. Includes training documents, SOPs, policies, templates, and other reference materials. Knowledge is input to the process, not the final output.
 
 ### Knowledge Document
-A reference document in the knowledge base (support article, SOP, policy, or template).
+An individual piece of content in the Knowledge section. Can be created in the editor or uploaded as a file (PDF, etc.).
+
+---
 
 ## M
 
-### Metrics
-Performance measurements tracked at workstream, contact driver, and sub-scenario levels (volume, AHT, FCR, CSAT, etc.).
+### Mapping
+The process of linking Knowledge documents to Scenarios. Mapping identifies which source materials are relevant to each specific situation.
+
+---
 
 ## O
 
-### Outbound
-Company-initiated contacts where the support team proactively reaches out to customers.
+### One-to-One Relationship
+The principle that each Scenario has exactly one Step Guide. This eliminates ambiguity about which guide applies to any given situation.
 
-## P
+---
 
-### Platform
-A customer experience (CX) software system like Zendesk, Intercom, or Gladly.
+## R
 
-### Policy
-A type of knowledge document containing official company guidelines and rules.
+### Raw Materials
+Another term for Knowledge—the unprocessed source documents collected at the start of context engineering.
 
-## Q
-
-### QA Score (Quality Assurance Score)
-A metric based on internal evaluation of agent performance against quality criteria.
+---
 
 ## S
 
-### SOP (Standard Operating Procedure)
-A type of knowledge document containing internal procedures for specific operations.
+### Scenario
+The most specific level of the context hierarchy. Represents a particular situation that requires specific handling. Examples: "Cancel Order", "Reset Password", "Process Return".
 
 ### Step Guide
-A procedural document with step-by-step instructions for handling specific scenarios. Supports versioning.
+The finished product of context engineering. A structured, procedural document that tells AI agents exactly how to handle a specific scenario. Step Guides are AI-ready content.
 
-### Sub-Scenario
-The most specific level of the context hierarchy, representing exact situations within a contact driver.
+### SOP (Standard Operating Procedure)
+A type of Knowledge document containing internal procedures. SOPs are raw materials that inform Step Guide writing.
 
-### Support Article
-A type of knowledge document containing customer-facing help content.
+---
 
 ## T
 
 ### Tags
-Keywords applied to knowledge documents for organization and searchability.
+Keywords applied to Knowledge documents for organization and filtering. Examples: "returns", "billing", "needs-review".
 
 ### Template
-A type of knowledge document containing pre-written content for common situations.
+A type of Knowledge document containing pre-written content. Templates in the Knowledge section are raw materials; the AI applies them through Step Guide instructions.
+
+### Tribal Knowledge
+Undocumented information that exists only in team members' heads. An important source to capture during knowledge gathering.
+
+---
 
 ## V
 
 ### Version
-A snapshot of a step guide's content at a point in time. Versions are numbered sequentially (v1, v2, v3).
+A snapshot of a Step Guide at a point in time. Versions are numbered sequentially (v1, v2, v3). Only the current version is editable; historical versions are preserved.
 
 ### Version Comment
-A required explanation of what changed when creating a new step guide version.
+A required note explaining what changed when creating a new Step Guide version. Good comments explain why the change was made.
 
-### Visibility
-A document setting controlling whether content is internal-only or can be shared with customers.
-
-### Volume
-The number of contacts handled, typically measured monthly.
+---
 
 ## W
 
 ### Workstream
-The top-level organizational unit in Context Engineering, representing a distinct support channel or function.
+The highest level of the context hierarchy. Represents a broad operational area or channel. Examples: "Customer Support Chat", "Sales Inquiries", "HR Questions".
 
 ---
 
 ## See Also
 
-- [Key Concepts](/getting-started/concepts)
-- [Quickstart Guide](/getting-started/quickstart)
+- [The Process](/introduction/the-process) - Full workflow overview
+- [Core Principles](/guides/core-principles) - Foundational concepts

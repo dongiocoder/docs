@@ -1,0 +1,216 @@
+---
+title: "Core Principles"
+description: "The foundational concepts of effective context engineering"
+---
+
+# Core Principles
+
+These principles form the foundation of effective context engineering. Understanding them will help you make better decisions throughout the process.
+
+## Principle 1: Separation of Raw and Ready
+
+**Raw knowledge is not AI-ready knowledge.**
+
+This is the most fundamental principle. The documents, PDFs, and notes you collect are *inputs* to the process, not the final product.
+
+```
+Raw Materials (Knowledge)     →     AI-Ready Content (Step Guides)
+─────────────────────────────────────────────────────────────────
+Training manuals              →     Structured procedures
+Policy documents              →     Clear decision trees
+Email templates               →     Contextual responses
+Tribal knowledge              →     Documented processes
+```
+
+**Why this matters:**
+- Raw documents often contain contradictions, outdated info, or incomplete coverage
+- AI needs clear, unambiguous instructions to perform reliably
+- The transformation process forces you to clarify and validate procedures
+
+## Principle 2: Structure Enables Scale
+
+**Good structure is what separates a pilot project from a production system.**
+
+The hierarchy (Workstreams → Contact Drivers → Scenarios) isn't just organization—it's infrastructure.
+
+### Without Structure
+
+```
+❌ Flat List of Guides:
+- Handle customer questions
+- Process returns
+- Fix login issues
+- Help with orders
+- Deal with complaints
+...and 200 more undifferentiated guides
+```
+
+### With Structure
+
+```
+✅ Organized Hierarchy:
+Customer Support
+├── Orders
+│   ├── Cancel Order
+│   ├── Modify Order
+│   └── Track Order
+├── Returns
+│   ├── Start Return
+│   └── Check Status
+└── Account
+    ├── Reset Password
+    └── Update Info
+```
+
+**Why this matters:**
+- AI can navigate to the right guide quickly
+- Teams can work on different areas independently
+- Gaps and overlaps become visible
+- Maintenance stays manageable at scale
+
+## Principle 3: One Scenario, One Guide
+
+**Every scenario gets exactly one Step Guide. No more, no less.**
+
+This 1:1 relationship seems restrictive but creates clarity:
+
+| Violation | Problem | Solution |
+|-----------|---------|----------|
+| 0 guides for 1 scenario | AI has no guidance | Write the guide |
+| 2+ guides for 1 scenario | AI doesn't know which to use | Merge or split |
+| 1 guide for 2+ scenarios | Guide becomes confusing | Split scenarios |
+
+**Why this matters:**
+- Eliminates ambiguity about which guide applies
+- Makes maintenance straightforward
+- Ensures consistent AI behavior
+
+## Principle 4: Completeness Over Perfection
+
+**It's better to have rough content everywhere than perfect content somewhere.**
+
+During knowledge gathering and hierarchy design, prioritize coverage:
+
+```
+Phase 1: Get everything
+├── Upload all documents (even imperfect ones)
+├── Define all scenarios (even rough ones)
+└── Map all connections (even approximate ones)
+
+Phase 2: Refine
+├── Improve document quality
+├── Refine scenario definitions
+└── Verify mappings
+```
+
+**Why this matters:**
+- Gaps in coverage mean AI can't help in those situations
+- Perfect guides for 20% of scenarios leave 80% unhandled
+- It's easier to improve existing content than create from nothing
+
+## Principle 5: Process, Not Project
+
+**Context engineering is ongoing maintenance, not a one-time effort.**
+
+Think of it like a garden, not a construction project:
+
+| Construction Mindset | Garden Mindset |
+|----------------------|----------------|
+| Build it once, done | Continuous care required |
+| Perfection at launch | Iteration over time |
+| Fixed scope | Evolving needs |
+| Team disbands | Team maintains |
+
+**Why this matters:**
+- Processes change, policies update, edge cases emerge
+- Regular maintenance keeps AI responses accurate
+- Version history captures evolution over time
+
+## Principle 6: User-Centric Organization
+
+**Organize by what users need, not how your systems work.**
+
+The hierarchy should reflect user goals, not internal structure:
+
+```
+❌ System-Centric:
+- Salesforce Issues
+- Shopify Issues
+- Payment Gateway Issues
+
+✅ User-Centric:
+- Place an Order
+- Track My Order
+- Return an Item
+```
+
+**Why this matters:**
+- Users don't know (or care) about your systems
+- AI should match how users describe their needs
+- Makes the hierarchy intuitive for everyone
+
+## Principle 7: Explicit Over Implicit
+
+**Say what you mean. AI can't read between the lines.**
+
+In Step Guides, be explicit about everything:
+
+```
+❌ Implicit:
+"Process the return as usual."
+
+✅ Explicit:
+"1. Open the order in Shopify
+ 2. Click More Actions → Create Return
+ 3. Select items to return
+ 4. Generate shipping label
+ 5. Email label to customer"
+```
+
+**Why this matters:**
+- AI follows instructions literally
+- "As usual" means nothing without context
+- Explicit guides produce consistent results
+
+## Principle 8: Test With Real Scenarios
+
+**The best way to find gaps is to use what you built.**
+
+Once you have Step Guides, test them:
+- Walk through scenarios manually
+- Use the AI agent on real inquiries
+- Note where it struggles or fails
+
+```
+Testing Loop:
+1. Run scenario through AI
+2. Identify failure or weakness
+3. Update Step Guide
+4. Re-test
+5. Repeat
+```
+
+**Why this matters:**
+- Theoretical coverage ≠ practical effectiveness
+- Real scenarios reveal edge cases
+- Continuous improvement requires feedback
+
+## Applying the Principles
+
+As you work through context engineering, use these principles as a checklist:
+
+<Accordion title="Principles Checklist">
+- [ ] Am I separating raw materials from AI-ready content?
+- [ ] Is my structure clear and scalable?
+- [ ] Does each scenario have exactly one guide?
+- [ ] Have I prioritized completeness over perfection?
+- [ ] Am I treating this as ongoing work, not a one-time project?
+- [ ] Is the organization user-centric?
+- [ ] Are my guides explicit, not implicit?
+- [ ] Am I testing with real scenarios?
+</Accordion>
+
+## Next Steps
+
+- [Best Practices](/guides/best-practices) - Practical tips for implementing these principles
+- [Common Pitfalls](/guides/common-pitfalls) - Mistakes that violate these principles

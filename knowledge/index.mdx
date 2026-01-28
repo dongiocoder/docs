@@ -1,136 +1,111 @@
 ---
-title: "Knowledge Base Overview"
-description: "Understanding the XOOS knowledge base and document management"
+title: "Knowledge Gathering"
+description: "Collecting and organizing your raw source materials"
 ---
 
-# Knowledge Base
+# Knowledge Gathering
 
-The knowledge base stores reference materials that support your AI agents and support team. Unlike step guides (which are procedural), knowledge documents are informational resources that provide context, policies, and answers.
+The Knowledge section is your **centralized repository** for all source materials. This is the first phase of context engineering—collecting everything you need to build AI-ready content.
 
-## What is the Knowledge Base?
+## Understanding the Purpose
 
-The knowledge base contains:
+<Warning>
+**Critical distinction**: Knowledge documents are **raw materials**, not AI-ready content. They will NOT be used directly by AI agents. You'll process this material into Step Guides in later phases.
+</Warning>
 
-- **Support Articles** - Customer-facing help content
-- **SOPs** - Standard operating procedures
-- **Policies** - Company guidelines and rules
-- **Templates** - Response templates and scripts
-- **Other** - Any additional reference material
+Think of it like cooking:
+- **Knowledge** = Your ingredients (flour, eggs, sugar)
+- **Step Guides** = The finished dish
 
-## Knowledge vs. Step Guides
+You need good ingredients to make a good dish, but you don't serve raw flour.
 
-| Knowledge Documents | Step Guides |
-|---------------------|-------------|
-| Reference material | Procedural instructions |
-| "What is the policy?" | "How do I handle this?" |
-| Multiple can apply | One per sub-scenario |
-| Background context | Active guidance |
+## What to Collect
 
-Both work together: step guides reference knowledge documents when agents need additional context.
+Gather everything that contains relevant information:
 
-## Document Types
+### Training Materials
+- Onboarding documents
+- Training manuals
+- Process walkthroughs
+- How-to guides
 
-### Support Articles
+### Procedures & Policies
+- Standard Operating Procedures (SOPs)
+- Policy documents
+- Compliance guidelines
+- Rules and exceptions
 
-Customer-facing content that explains products, features, or common questions.
-
-**Use for:**
-- Product documentation
-- Feature explanations
-- How-to guides for customers
-- Troubleshooting help
-
-### SOPs (Standard Operating Procedures)
-
-Internal procedures for specific operations.
-
-**Use for:**
-- Escalation procedures
-- Verification processes
-- Quality standards
-- Compliance requirements
-
-### Policies
-
-Official company guidelines and rules.
-
-**Use for:**
-- Return policies
-- Refund guidelines
-- Privacy practices
-- Terms of service
-
-### Templates
-
-Pre-written content for common situations.
-
-**Use for:**
+### Templates & Macros
 - Email templates
-- Chat scripts
-- Apology messages
-- Follow-up communications
+- Chat macros
+- Response scripts
+- Form letters
 
-## Creating Documents
+### Reference Content
+- FAQ documents
+- Product information
+- System documentation
+- Troubleshooting guides
 
-Documents can be created two ways:
+### Tribal Knowledge
+- Undocumented processes
+- Expert tips and tricks
+- Common workarounds
+- Known issues
 
-1. **Editor** - Write content directly in XOOS using the rich text editor
-2. **File Upload** - Upload existing documents (PDF, etc.)
+<Tip>
+Don't skip tribal knowledge! Often the most valuable information isn't written down. Interview your experts and document what they know.
+</Tip>
 
-[Learn more about creating documents](/knowledge/documents)
+## The Collection Process
 
-## Document Visibility
+### Step 1: Identify Sources
 
-Documents have visibility settings:
+Work with stakeholders to inventory all knowledge sources:
+- Shared drives and folders
+- Wiki pages
+- Ticketing system macros
+- Training platforms
+- Team members' personal notes
 
-| Visibility | Description |
-|------------|-------------|
-| **Internal** | Only for agents and internal use |
-| **Public** | Can be shared with or shown to customers |
+### Step 2: Gather Everything
 
-## Organization
+Upload all relevant materials to XOOS:
+- Use **Upload** for existing files (PDFs, documents)
+- Use **Create Document** for content you type or paste
 
-### Categories
+### Step 3: Categorize
 
-Documents are organized by category:
-- Support Article
-- SOP
-- Policy
-- Template
-- Other
+Assign a category to each document:
 
-### Tags
+| Category | Use For |
+|----------|---------|
+| Support Article | Customer-facing help content |
+| SOP | Internal procedures |
+| Policy | Official guidelines and rules |
+| Template | Pre-written responses |
+| Other | Anything else |
 
-Add tags for easy filtering and search:
-- Product names
-- Topics
-- Teams
-- Urgency levels
+### Step 4: Review for Completeness
 
-### Search
+Before moving to the next phase, verify:
+- All teams have contributed their materials
+- No major topic areas are missing
+- Tribal knowledge has been documented
 
-Find documents by:
-- Title search
-- Content search
-- Category filter
-- Tag filter
+## Quality Over Perfection
 
-## Using Knowledge in Context
+At this stage, **completeness beats perfection**:
 
-Knowledge documents are linked to sub-scenarios:
+- Don't rewrite documents before uploading
+- Don't worry about formatting
+- Don't skip materials because they're "rough"
 
-```
-Sub-Scenario: Process Return
-├── Step Guide: Return Processing Steps
-└── Knowledge:
-    ├── Return Policy
-    ├── Refund Timeline
-    └── Exception Handling Guidelines
-```
-
-When an AI agent handles this scenario, it has access to both the procedural steps and the reference materials.
+You'll refine and structure the content when writing Step Guides. For now, just get it all in one place.
 
 ## Next Steps
 
-- [Creating Documents](/knowledge/documents) - Write new knowledge content
-- [Uploading Files](/knowledge/file-uploads) - Add existing documents
+Once your knowledge is collected:
+1. [Collecting Knowledge](/knowledge/collecting) - Detailed upload instructions
+2. [Categorizing Knowledge](/knowledge/categorizing) - Organizing effectively
+3. [Define Your Hierarchy](/hierarchy/index) - Structure your domain

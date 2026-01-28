@@ -1,0 +1,186 @@
+---
+title: "Scenarios"
+description: "Defining specific situations within contact drivers"
+---
+
+# Scenarios
+
+Scenarios are the most specific level of your hierarchy. Each scenario represents a particular situation that requires a specific response or procedure.
+
+## What is a Scenario?
+
+A scenario answers: **"What exactly is happening?"**
+
+While a contact driver might be "Order Issues," scenarios break this down into specific situations:
+- Cancel Order (before shipping)
+- Cancel Order (already shipped)
+- Modify Order Address
+- Add Items to Order
+- Track Shipment
+- Report Missing Package
+
+## The Goal: One Step Guide Per Scenario
+
+Every scenario will have exactly one Step Guide linked to it. This 1:1 relationship is intentional:
+
+- **No ambiguity**: One situation, one procedure
+- **Clear ownership**: Easy to maintain and update
+- **Consistent responses**: AI always knows which guide to use
+
+## Creating a Scenario
+
+1. Open a contact driver
+2. Click **Add Scenario**
+3. Provide the details:
+
+### Name
+
+Specific, action-oriented identifier:
+- "Cancel Order" ✓
+- "Order cancellation" ✓
+- "When customer wants to cancel" ✗ (too verbose)
+- "Cancel" ✗ (too vague)
+
+### Description
+
+Detailed explanation of when this scenario applies:
+
+```
+Good:
+"Customer wants to cancel an order that has not yet shipped.
+May include requests for:
+- Full cancellation
+- Partial cancellation (some items)
+- Confirmation of refund timeline
+
+Excludes: Orders that have already shipped (see 'Return Shipped Order')"
+
+Bad:
+"Order cancellation"
+```
+
+## How Specific Should Scenarios Be?
+
+### Too Broad
+```
+Scenario: Handle Order Issues
+→ Covers too many different procedures
+→ Step guide would be confusingly long
+→ Split into specific scenarios
+```
+
+### Too Narrow
+```
+Scenario: Cancel Order for Blue Widget on Tuesday
+→ Too specific, not reusable
+→ Combine into "Cancel Order"
+```
+
+### Just Right
+```
+Scenario: Cancel Order (Not Shipped)
+→ Specific situation
+→ Clear procedure
+→ Reusable across similar situations
+```
+
+## Scenario Design Principles
+
+### Distinct Procedures
+
+If two scenarios require different procedures, they should be separate:
+
+```
+✅ Separate (different procedures):
+- Cancel Order (Not Shipped) → Process refund immediately
+- Cancel Order (Shipped) → Initiate return process
+```
+
+### Similar Procedures = One Scenario
+
+If situations are handled the same way, combine them:
+
+```
+✅ Combined (same procedure):
+- "Update Shipping Address" covers:
+  - Change street address
+  - Change city
+  - Change postal code
+```
+
+### Edge Cases
+
+Include scenarios for important edge cases:
+
+```
+Standard scenarios:
+- Process Standard Return
+
+Edge case scenarios:
+- Process Return (Outside Window)
+- Process Return (Damaged Item)
+- Process Return (Wrong Item Sent)
+```
+
+## Naming Conventions
+
+Consistent naming helps everyone:
+
+### Pattern: [Action] + [Subject] + [Qualifier]
+
+```
+Examples:
+- Cancel Order (Not Shipped)
+- Process Return (Standard)
+- Reset Password (Locked Account)
+- Upgrade Plan (From Trial)
+```
+
+### Alternative: [Subject] - [Specific Situation]
+
+```
+Examples:
+- Order - Cancel Before Shipping
+- Return - Standard Process
+- Password - Reset After Lockout
+- Plan - Upgrade From Trial
+```
+
+Pick one pattern and use it consistently.
+
+## Scenario Checklist
+
+Before finalizing scenarios, verify:
+
+<Accordion title="Scenario Quality Checklist">
+- [ ] Name clearly identifies the situation
+- [ ] Description explains when this applies
+- [ ] Different from similar scenarios
+- [ ] Requires a distinct procedure
+- [ ] Not too broad (needs splitting)
+- [ ] Not too narrow (can be combined)
+- [ ] Uses consistent naming pattern
+- [ ] Edge cases are covered
+</Accordion>
+
+## Managing Scenarios
+
+### Linking Knowledge
+
+After creating scenarios, link relevant knowledge documents:
+1. Open the scenario
+2. Go to **Knowledge** section
+3. Link documents that relate to this scenario
+
+### Linking Step Guides
+
+Once you've written a step guide:
+1. Open the scenario
+2. Go to **Step Guide** section
+3. Link the appropriate guide
+
+## Next Steps
+
+With scenarios defined:
+1. [Map Knowledge to Scenarios](/mapping/index)
+2. [Write Step Guides](/step-guides/index)

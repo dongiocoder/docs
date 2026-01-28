@@ -1,0 +1,262 @@
+---
+title: "Writing Step Guides"
+description: "How to write effective Step Guides for AI agents"
+---
+
+# Writing Step Guides
+
+This guide covers how to write Step Guides that are clear, complete, and effective for AI agent use.
+
+## Before You Write
+
+### Gather Materials
+
+Collect everything you'll reference:
+- Linked knowledge documents for this scenario
+- The scenario description
+- Related policies
+- Existing templates
+
+### Understand the Outcome
+
+Answer these questions:
+- What is the user trying to accomplish?
+- What does successful resolution look like?
+- What can go wrong?
+
+## The Writing Process
+
+### Step 1: Create the Guide
+
+1. Navigate to **Knowledge** > **Step Guides**
+2. Click **Create Step Guide**
+3. Enter a title and description
+
+### Step 2: Write the Content
+
+Use the editor to write your guide. Follow the structure below.
+
+### Step 3: Link to Scenario
+
+1. Open the relevant scenario
+2. Find **Step Guide** section
+3. Link your new guide
+
+## Recommended Structure
+
+### Title
+
+Clear, action-oriented:
+- "Processing a Standard Return" ✓
+- "Return Stuff" ✗
+- "What to Do When Customer Returns Something" ✗
+
+### Description
+
+Brief summary of when this guide applies:
+
+```
+Use this guide when a customer wants to return a product
+within the 30-day return window under standard conditions.
+
+Excludes:
+- Returns outside the window (see "Process Late Return")
+- Damaged items (see "Process Damaged Item Return")
+```
+
+### Prerequisites
+
+What's needed before starting:
+
+```
+## Prerequisites
+
+- Customer identity verified
+- Order located in system
+- Return reason confirmed
+```
+
+### Steps
+
+The main procedure:
+
+```
+## Steps
+
+### 1. Verify Eligibility
+
+Check that the item qualifies for return:
+- Within 30-day window
+- Item is in original packaging
+- Not a final sale item
+
+### 2. Create Return Label
+
+In the order system:
+1. Click "Create Return"
+2. Select items being returned
+3. Generate shipping label
+4. Email label to customer
+
+### 3. Confirm with Customer
+
+Inform the customer:
+- Return label has been emailed
+- Refund will process within 3-5 business days after receipt
+- Original payment method will be credited
+```
+
+### Decision Points
+
+For situations with branches:
+
+```
+### Handle Based on Condition
+
+**If item is unopened:**
+- Process full refund
+
+**If item is opened but unused:**
+- Process full refund
+- Note condition in system
+
+**If item shows signs of use:**
+- Escalate to supervisor
+- Do not promise refund
+```
+
+### Escalation Criteria
+
+When to hand off:
+
+```
+## Escalation
+
+Escalate to supervisor if:
+- Refund amount exceeds $500
+- Customer is threatening or abusive
+- Item is from restricted category
+- Customer disputes policy
+```
+
+### Related Information
+
+Links to supporting content:
+
+```
+## Related
+
+- [Return Policy](/policies/returns)
+- [Refund Processing Times](/policies/refunds)
+- [Supervisor Escalation Process](/processes/escalation)
+```
+
+## Writing Tips
+
+### Be Specific
+
+```
+❌ Vague:
+"Process the return in the system"
+
+✅ Specific:
+"In Shopify Admin, click Orders > [Order Number] > More Actions > Create Return"
+```
+
+### Use Consistent Formatting
+
+Pick a format and stick with it:
+- Numbered steps for sequences
+- Bullet points for lists
+- Bold for emphasis
+- Consistent heading levels
+
+### Include Examples
+
+When helpful:
+
+```
+Example customer message:
+"I'd like to cancel my order #12345 that I placed yesterday."
+
+Example response:
+"I've canceled order #12345 and initiated a full refund of $49.99
+to your original payment method. You should see this within
+3-5 business days."
+```
+
+### Cover Edge Cases
+
+Don't just document the happy path:
+
+```
+### If Order Cannot Be Found
+
+If the order number doesn't exist:
+1. Ask customer to verify the order number
+2. Search by email address
+3. If still not found, escalate to order support team
+```
+
+### Avoid Jargon
+
+Use language the AI can understand and communicate clearly:
+
+```
+❌ Jargon:
+"Initiate the RMA workflow via the OMS"
+
+✅ Clear:
+"Create a return request in the Order Management System"
+```
+
+## Common Mistakes
+
+### Too Vague
+
+Guide says: "Handle appropriately"
+Problem: AI doesn't know what's appropriate
+Fix: Specify exactly what to do
+
+### Missing Steps
+
+Guide jumps from step 2 to step 4
+Problem: AI can't fill gaps
+Fix: Include every step
+
+### Outdated Information
+
+Guide references old policy
+Problem: AI gives wrong information
+Fix: Update guides when policies change
+
+### Assuming Context
+
+Guide says: "Continue as usual"
+Problem: AI doesn't know "usual"
+Fix: Spell out the procedure
+
+## After Writing
+
+### Review Checklist
+
+<Accordion title="Step Guide Quality Checklist">
+- [ ] Title clearly describes the procedure
+- [ ] Description explains when to use this guide
+- [ ] All steps are numbered and clear
+- [ ] Decision points cover all likely branches
+- [ ] Escalation criteria are specific
+- [ ] No jargon or undefined terms
+- [ ] Examples included where helpful
+- [ ] Related information linked
+- [ ] Reviewed by a subject matter expert
+</Accordion>
+
+### Link to Scenario
+
+Don't forget to link the guide to its scenario so AI can find it.
+
+## Next Steps
+
+- [Managing Versions](/step-guides/versioning) - Update guides over time
+- [Best Practices](/guides/best-practices) - Tips for scaling your work

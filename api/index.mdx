@@ -1,0 +1,66 @@
+---
+title: "API Reference"
+description: "XOOS API documentation"
+---
+
+# API Reference
+
+The XOOS API enables programmatic access to your context engineering data and AI agents.
+
+<Note>
+The XOOS API is currently in development. This documentation will be updated as endpoints become available.
+</Note>
+
+## Coming Soon
+
+### Context API
+
+Programmatic access to your context hierarchy:
+- List workstreams, contact drivers, and scenarios
+- CRUD operations on knowledge documents
+- Step guide management
+- Version history access
+
+### Agent API
+
+Interact with your AI agents:
+- Send inquiries to deployed agents
+- Retrieve conversation history
+- Access agent configuration
+- Monitor agent performance
+
+### Webhook Events
+
+Receive notifications when:
+- Step guides are updated
+- New versions are created
+- Agents are deployed
+- Configurations change
+
+## Authentication
+
+API access will use API keys:
+
+```bash
+curl -X GET "https://api.cxai.studio/v1/workstreams" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+```
+
+## Rate Limits
+
+Details on rate limits will be provided when the API is released.
+
+## SDKs
+
+We plan to provide SDKs for:
+- JavaScript/TypeScript
+- Python
+- Go
+
+## Getting Updates
+
+Check the [Changelog](/changelog/index) for API updates and release announcements.
+
+## Contact
+
+For API access inquiries or to join the beta program, contact your XOOS account representative.

@@ -1,0 +1,190 @@
+---
+title: "Contact Drivers"
+description: "Defining the categories of inquiries within workstreams"
+---
+
+# Contact Drivers
+
+Contact drivers are the second level of your hierarchy. They represent the main reasons or categories of inquiries within each workstream.
+
+## What is a Contact Driver?
+
+A contact driver answers: **"Why is someone reaching out?"**
+
+Each workstream contains multiple contact drivers that cover the major categories of inquiries it handles.
+
+## Examples
+
+### Under "Customer Support Chat"
+- Order Issues
+- Account Problems
+- Billing Questions
+- Product Returns
+- Shipping Inquiries
+
+### Under "Sales Inquiries"
+- Pricing Questions
+- Product Comparison
+- Feature Requests
+- Trial Extensions
+- Enterprise Inquiries
+
+### Under "HR Support"
+- Benefits Questions
+- Time Off Requests
+- Policy Clarifications
+- Payroll Issues
+- Workplace Concerns
+
+## Creating a Contact Driver
+
+1. Open a workstream
+2. Click **Add Contact Driver**
+3. Fill in the details:
+
+### Name
+
+Clear, concise identifier:
+- "Order Issues" ✓
+- "Problems with orders and stuff" ✗
+- "OI" ✗ (too abbreviated)
+
+### Description
+
+Explain what this contact driver covers:
+
+```
+Good:
+"Inquiries about existing orders including modifications,
+cancellations, tracking, and issues with received items."
+
+Bad:
+"Order stuff"
+```
+
+The description helps:
+- Team members understand scope
+- AI categorize inquiries correctly
+- Identify overlaps with other drivers
+
+### Integrations (Optional)
+
+Systems involved in handling these inquiries:
+- Shopify (order management)
+- Stripe (payments)
+- Shipping carriers (tracking)
+
+## How Many Contact Drivers?
+
+Per workstream guidelines:
+
+| Workstream Size | Contact Drivers |
+|-----------------|-----------------|
+| Focused | 3-5 |
+| Standard | 5-10 |
+| Complex | 10-15 |
+| Very Complex | 15-20 |
+
+<Tip>
+Aim for contact drivers that each contain 5-15 scenarios. If a contact driver has 30+ scenarios, consider splitting it. If it has only 1-2 scenarios, consider merging.
+</Tip>
+
+## Designing Good Contact Drivers
+
+### Mutually Exclusive
+
+Each inquiry should clearly belong to one contact driver:
+
+```
+❌ Overlapping:
+- Refund Questions
+- Billing Issues
+- Payment Problems
+
+✅ Distinct:
+- Refunds & Returns
+- Billing & Invoicing
+- Payment Methods
+```
+
+### Collectively Exhaustive
+
+Together, contact drivers should cover all scenarios in the workstream:
+
+```
+❌ Gaps:
+- Orders (what about non-order questions?)
+- Shipping (what about products?)
+
+✅ Complete:
+- Orders & Shipping
+- Products & Catalog
+- Account & Profile
+- Billing & Payments
+```
+
+### User-Centric Language
+
+Use language that matches how users describe their issues:
+
+```
+❌ Internal jargon:
+- SKU Discrepancies
+- Fulfillment Exceptions
+
+✅ User language:
+- Wrong Item Received
+- Delivery Problems
+```
+
+## Organizing Contact Drivers
+
+### By User Goal
+
+What is the user trying to accomplish?
+- Get Help with Order
+- Manage Account
+- Make a Purchase
+
+### By Topic Area
+
+What subject does this relate to?
+- Orders & Shipping
+- Products & Inventory
+- Billing & Payments
+
+### By Urgency (if relevant)
+
+How quickly does this need resolution?
+- Urgent Issues
+- Standard Requests
+- General Inquiries
+
+## Managing Contact Drivers
+
+### Moving Between Workstreams
+
+If a contact driver belongs to a different workstream:
+1. Create the contact driver in the correct workstream
+2. Move or recreate its scenarios
+3. Delete the original
+
+### Merging Contact Drivers
+
+If two contact drivers overlap too much:
+1. Decide which to keep
+2. Move scenarios from the other
+3. Delete the empty one
+
+### Splitting Contact Drivers
+
+If a contact driver is too large:
+1. Create new, more specific contact drivers
+2. Distribute scenarios appropriately
+3. Delete the original if empty
+
+## Next Steps
+
+With contact drivers defined:
+1. [Create Scenarios](/hierarchy/scenarios)
+2. [Map Knowledge to Scenarios](/mapping/index)

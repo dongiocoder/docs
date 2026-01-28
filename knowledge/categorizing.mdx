@@ -1,0 +1,116 @@
+---
+title: "Categorizing Knowledge"
+description: "Organizing your knowledge documents effectively"
+---
+
+# Categorizing Knowledge
+
+Good categorization makes your knowledge findable and helps you track coverage during the context engineering process.
+
+## Document Categories
+
+Every knowledge document should have a category:
+
+| Category | Description | Examples |
+|----------|-------------|----------|
+| **Support Article** | Customer-facing help content | FAQ pages, help center articles |
+| **SOP** | Internal procedures | Process docs, how-to guides |
+| **Policy** | Official rules and guidelines | Return policy, refund rules |
+| **Template** | Pre-written content | Email templates, chat macros |
+| **Other** | Anything else | Reference docs, notes |
+
+## Using Tags
+
+Tags add another layer of organization:
+
+### By Topic
+- `orders`, `shipping`, `billing`, `account`
+
+### By Product
+- `product-a`, `product-b`, `premium-tier`
+
+### By Status
+- `needs-review`, `outdated`, `verified`
+
+### By Source
+- `from-training`, `from-wiki`, `tribal-knowledge`
+
+## Visibility Settings
+
+Control who can see each document:
+
+- **Internal**: For agents and internal processes only
+- **Public**: Can be shared with customers
+
+Most knowledge documents should be **Internal**—they're source material for building Step Guides, not customer-facing content.
+
+## Organizing for the Process
+
+Think about how you'll use these documents later:
+
+### Map to Your Hierarchy
+
+As you categorize, consider:
+- Which workstream does this relate to?
+- Which contact drivers might use this?
+- Which scenarios will reference this?
+
+You don't need to assign these yet, but thinking ahead helps.
+
+### Track Coverage
+
+Use tags to track:
+- `mapped` - Linked to at least one scenario
+- `unmapped` - Not yet linked anywhere
+- `needs-guide` - Referenced but no step guide written
+
+## Best Practices
+
+### Consistent Naming
+
+Use a naming convention:
+
+```
+[Type] - [Topic] - [Specifics]
+
+Good:
+- "SOP - Returns - Damaged Items Process"
+- "Template - Email - Refund Confirmation"
+
+Bad:
+- "returns doc"
+- "Copy of training (2)"
+```
+
+### Avoid Over-Categorizing
+
+Keep it simple:
+- 5 categories is enough
+- 10-15 tags per project
+- More granularity isn't always better
+
+### Document Your System
+
+Create a quick reference for your team:
+
+```
+CATEGORIZATION GUIDE
+
+Categories:
+- Support Article: Public-facing help content
+- SOP: Internal step-by-step processes
+- Policy: Rules, limits, exceptions
+- Template: Copy-paste responses
+- Other: Reference material
+
+Tags:
+- Topic: orders, returns, billing, account
+- Status: verified, needs-review
+- Coverage: mapped, unmapped
+```
+
+## Next Steps
+
+With knowledge collected and categorized:
+1. [Define Your Hierarchy](/hierarchy/index) - Create structure
+2. [Map Knowledge to Scenarios](/mapping/index) - Connect the dots

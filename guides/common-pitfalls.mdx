@@ -1,0 +1,249 @@
+---
+title: "Common Pitfalls"
+description: "Mistakes to avoid in context engineering"
+---
+
+# Common Pitfalls
+
+These are the most frequent mistakes made in context engineering. Recognizing them helps you avoid or recover from them.
+
+## Knowledge Gathering Pitfalls
+
+### Pitfall: Treating Knowledge as Final
+
+**The mistake**: Uploading documents and thinking the job is done.
+
+**Why it happens**: It feels productive to collect lots of documents.
+
+**The fix**: Remember that knowledge is raw material. The real work—writing Step Guides—comes later.
+
+---
+
+### Pitfall: Skipping Tribal Knowledge
+
+**The mistake**: Only collecting written documents.
+
+**Why it happens**: Documents are easy to gather; interviews take effort.
+
+**The fix**: Schedule sessions with SMEs. Ask: "What do you do that isn't written down?"
+
+---
+
+### Pitfall: Collecting Without Organizing
+
+**The mistake**: Dumping all documents into one folder without tags or categories.
+
+**Why it happens**: Organization feels like it slows down collection.
+
+**The fix**: Tag and categorize as you upload. The investment pays off immediately.
+
+## Hierarchy Pitfalls
+
+### Pitfall: Too Many Levels
+
+**The mistake**: Creating 5+ levels of hierarchy.
+
+**Why it happens**: Desire for perfect organization.
+
+**The fix**: Stick to three levels (Workstream → Contact Driver → Scenario). If you need more granularity, it belongs in the Step Guide.
+
+---
+
+### Pitfall: System-Centric Organization
+
+**The mistake**: Organizing by internal systems instead of user needs.
+
+```
+❌ Wrong:
+- Salesforce Issues
+- Shopify Issues
+
+✅ Right:
+- Order Problems
+- Account Issues
+```
+
+**Why it happens**: Teams think in terms of their tools.
+
+**The fix**: Ask: "What is the customer trying to accomplish?"
+
+---
+
+### Pitfall: Overlapping Scenarios
+
+**The mistake**: Creating scenarios that aren't mutually exclusive.
+
+```
+❌ Overlapping:
+- Cancel Order
+- Refund Request
+(What if someone wants to cancel for a refund?)
+```
+
+**Why it happens**: Different people create scenarios independently.
+
+**The fix**: Define clear boundaries. Document what each scenario includes and excludes.
+
+## Mapping Pitfalls
+
+### Pitfall: Over-Mapping
+
+**The mistake**: Linking every remotely related document to every scenario.
+
+**Why it happens**: Fear of missing something.
+
+**The fix**: Ask: "Would I actually reference this document when handling this specific scenario?"
+
+---
+
+### Pitfall: No Mapping at All
+
+**The mistake**: Skipping the mapping phase entirely.
+
+**Why it happens**: It seems like extra work with no immediate payoff.
+
+**The fix**: Understand that mapping is your reference guide for writing Step Guides. It also enables future AI assistance.
+
+## Step Guide Pitfalls
+
+### Pitfall: Writing for Humans
+
+**The mistake**: Using informal language, implied context, and "use your judgment."
+
+```
+❌ Human-style:
+"Handle this the usual way, being mindful of the customer's feelings."
+
+✅ AI-style:
+"1. Acknowledge the issue
+ 2. Apologize for the inconvenience
+ 3. State the resolution
+ 4. Ask if there's anything else"
+```
+
+**Why it happens**: We write how we'd explain to a colleague.
+
+**The fix**: Imagine explaining to someone who knows nothing about your company.
+
+---
+
+### Pitfall: Missing Edge Cases
+
+**The mistake**: Only documenting the happy path.
+
+**Why it happens**: Edge cases are easy to forget until they happen.
+
+**The fix**: For each guide, ask: "What could go wrong? What exceptions exist?"
+
+---
+
+### Pitfall: One Guide for Multiple Scenarios
+
+**The mistake**: Writing a single guide that tries to cover several scenarios.
+
+```
+❌ Too broad:
+"Order Modifications Guide" covering cancels, address changes, and item changes
+
+✅ Focused:
+- "Cancel Order" guide
+- "Change Shipping Address" guide
+- "Modify Order Items" guide
+```
+
+**Why it happens**: Desire for efficiency.
+
+**The fix**: Accept that one guide per scenario creates clearer, more maintainable content.
+
+## Process Pitfalls
+
+### Pitfall: Big Bang Approach
+
+**The mistake**: Trying to complete all context engineering before using any of it.
+
+**Why it happens**: Perfectionism; wanting everything ready.
+
+**The fix**: Start with high-volume scenarios. Get some guides working, then expand.
+
+---
+
+### Pitfall: No Maintenance Plan
+
+**The mistake**: Treating context engineering as a one-time project.
+
+**Why it happens**: Projects have end dates; maintenance doesn't.
+
+**The fix**: Assign ownership, schedule reviews, plan for updates.
+
+---
+
+### Pitfall: Solo Work
+
+**The mistake**: One person doing everything alone.
+
+**Why it happens**: Coordination overhead; feeling it's faster alone.
+
+**The fix**: Involve SMEs for accuracy, peers for review, and leadership for prioritization.
+
+## Recovery Strategies
+
+Already made these mistakes? Here's how to recover:
+
+### If You Have Unorganized Knowledge
+
+1. Don't panic—the content is there
+2. Create a categorization scheme
+3. Process documents in batches
+4. Tag as you go
+
+### If Your Hierarchy Is Wrong
+
+1. Identify the problem areas
+2. Design the improved structure
+3. Migrate scenarios gradually
+4. Update as needed
+
+### If Your Guides Are Poor Quality
+
+1. Prioritize by usage (fix high-volume first)
+2. Create a template for consistency
+3. Rewrite one at a time
+4. Test each rewritten guide
+
+### If You Have No Maintenance Process
+
+1. Assign owners to each area
+2. Schedule a recurring review
+3. Create a change log
+4. Start tracking signals for needed updates
+
+## Red Flags Checklist
+
+Use this to spot problems early:
+
+<Accordion title="Warning Signs">
+**Knowledge**
+- [ ] Documents haven't been touched since upload
+- [ ] No categories or tags
+- [ ] SMEs haven't been interviewed
+
+**Hierarchy**
+- [ ] More than 3 levels deep
+- [ ] Scenarios that sound the same
+- [ ] Organization matches systems, not user needs
+
+**Mapping**
+- [ ] Every document linked to every scenario
+- [ ] No mappings at all
+- [ ] Can't tell what source material supports a guide
+
+**Step Guides**
+- [ ] Guides say "use judgment" or "handle appropriately"
+- [ ] One guide covers multiple scenarios
+- [ ] No guides have been tested
+
+**Process**
+- [ ] No reviews scheduled
+- [ ] No one owns maintenance
+- [ ] Working alone without SME input
+</Accordion>

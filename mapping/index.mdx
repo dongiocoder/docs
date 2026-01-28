@@ -1,0 +1,154 @@
+---
+title: "Map Knowledge"
+description: "Linking raw materials to scenarios"
+---
+
+# Map Knowledge
+
+Mapping is the bridge between your raw knowledge and your structured scenarios. It creates the connection that tells you "this document is relevant for this scenario."
+
+## Why Mapping Matters
+
+### For Step Guide Writing
+
+When you write a step guide for a scenario, you need to know:
+- What source materials to reference
+- What policies apply
+- What templates exist
+
+Mapping gives you this information at a glance.
+
+### For Coverage Tracking
+
+Mapping helps you identify:
+- Scenarios without knowledge (missing sources)
+- Knowledge without scenarios (orphaned documents)
+- Gaps in your documentation
+
+### For Future AI Assistance
+
+When AI-assisted guide writing becomes available, it will use your mappings to know which documents to reference when generating guides.
+
+## What to Map
+
+Link knowledge documents that are relevant to each scenario:
+
+### Primary Sources
+Documents directly about this scenario:
+- SOPs for this specific procedure
+- Policies that apply
+- Templates to use
+
+### Reference Materials
+Documents that provide context:
+- Product information referenced in the procedure
+- Related policies for edge cases
+- Troubleshooting guides for common issues
+
+### Don't Over-Map
+
+Only link documents that someone would actually reference when handling this scenario. Tangentially related documents add noise.
+
+## The Mapping Process
+
+### Approach 1: Scenario-First
+
+For each scenario:
+1. Open the scenario
+2. Think: "What documents would I need to handle this?"
+3. Search your knowledge base
+4. Link the relevant documents
+
+### Approach 2: Document-First
+
+For each document:
+1. Open the knowledge document
+2. Think: "Which scenarios would use this?"
+3. Link it to those scenarios
+
+### Recommended: Hybrid
+
+1. Start with scenario-first for your most important scenarios
+2. Then do document-first to catch unmapped documents
+
+## Practical Steps
+
+### Linking Knowledge to a Scenario
+
+1. Navigate to the scenario
+2. Find the **Linked Knowledge** section
+3. Click **Link Document**
+4. Search or browse available documents
+5. Select relevant documents
+6. Click **Add**
+
+### Viewing What's Linked
+
+Each scenario shows its linked documents. You can:
+- View the document
+- Remove the link
+- Add additional documents
+
+## Coverage Analysis
+
+After mapping, analyze your coverage:
+
+### Well-Covered Scenario
+```
+Scenario: Cancel Order (Not Shipped)
+├── Linked: SOP - Order Cancellation Process
+├── Linked: Policy - Refund Timeline
+├── Linked: Template - Cancellation Confirmation Email
+└── Status: Ready for step guide writing
+```
+
+### Under-Covered Scenario
+```
+Scenario: Process International Return
+├── Linked: (none)
+└── Status: Missing source materials!
+```
+
+### Over-Mapped Scenario
+```
+Scenario: Reset Password
+├── Linked: Account Security Overview
+├── Linked: Password Policy
+├── Linked: Company History (not relevant!)
+├── Linked: Employee Handbook (not relevant!)
+└── Status: Needs cleanup
+```
+
+## Mapping Best Practices
+
+### Start Broad, Then Refine
+
+1. First pass: Link obviously relevant documents
+2. Second pass: Add supporting documents
+3. Third pass: Remove tangentially related documents
+
+### Use Tags for Organization
+
+Tag your knowledge documents with the scenarios they relate to:
+- `mapped-to:order-cancellation`
+- `used-in:returns`
+
+### Track Unmapped Documents
+
+Keep a list of documents not yet linked to any scenario. These might indicate:
+- Missing scenarios in your hierarchy
+- Outdated documents to archive
+- General reference materials that don't map to specific scenarios
+
+### Regular Review
+
+As your knowledge base grows:
+- Review new documents for mapping
+- Check scenarios when procedures change
+- Remove links to archived documents
+
+## Next Steps
+
+With knowledge mapped to scenarios:
+1. [Write Step Guides](/step-guides/index)
+2. [Learn about Step Guide Writing](/step-guides/writing)

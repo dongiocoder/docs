@@ -1,0 +1,171 @@
+---
+title: "The Process"
+description: "Understanding the complete context engineering workflow"
+---
+
+# The Context Engineering Process
+
+Context engineering in XOOS follows a structured, repeatable process. This page explains each phase in detail.
+
+## Process Overview
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  1. GATHER  →  2. STRUCTURE  →  3. MAP  →  4. WRITE  →  5. MAINTAIN  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## Phase 1: Knowledge Gathering
+
+**Goal**: Collect all source materials in one centralized repository.
+
+### What to Gather
+
+- Training documents and manuals
+- Standard Operating Procedures (SOPs)
+- Policy documents
+- Email templates and macros
+- FAQ documents
+- Reference materials
+- Tribal knowledge (document it!)
+
+### Key Point
+
+<Warning>
+The knowledge you gather is **raw material**. It is NOT directly used by AI agents. Think of it as ingredients—you'll process them in later phases.
+</Warning>
+
+### How to Do It
+
+1. Work with the client or team to identify all relevant materials
+2. Upload everything to the Knowledge section
+3. Categorize by type (SOP, Policy, Template, etc.)
+4. Don't worry about perfection—completeness matters more
+
+[Learn more about Knowledge Gathering →](/knowledge/index)
+
+## Phase 2: Define Hierarchy
+
+**Goal**: Create a clear structure that organizes your domain.
+
+### The Three Levels
+
+| Level | Description | Example |
+|-------|-------------|---------|
+| **Workstream** | Broad operational area | "Customer Support Chat" |
+| **Contact Driver** | Category of inquiry | "Order Issues" |
+| **Scenario** | Specific situation | "Cancel Order" |
+
+### Decision: Mimic or Create?
+
+You have two approaches:
+
+1. **Mimic the client's setup**: If the client already has categories, queues, or structures, mirror them in XOOS
+2. **Create from scratch**: Design an optimal structure based on the knowledge gathered
+
+Either works—the goal is a clear, logical breakdown.
+
+### Why Structure Matters
+
+A good hierarchy:
+- Enables AI to quickly find the right guidance
+- Makes maintenance manageable
+- Scales without becoming chaotic
+- Reduces confusion and overlap
+
+[Learn more about Defining Hierarchy →](/hierarchy/index)
+
+## Phase 3: Map Knowledge
+
+**Goal**: Link raw materials to the scenarios where they're relevant.
+
+### Why Mapping?
+
+Mapping creates the connection between your source materials and your scenarios. It answers: "What knowledge do we need to write this scenario's step guide?"
+
+### How to Map
+
+For each scenario:
+1. Identify which knowledge documents are relevant
+2. Link them to the scenario
+3. This creates your reference set for writing
+
+### Benefits
+
+- Know exactly what sources to use per scenario
+- Track knowledge coverage (are all docs mapped?)
+- Future AI assistance can use mappings to auto-generate guides
+
+[Learn more about Mapping Knowledge →](/mapping/index)
+
+## Phase 4: Write Step Guides
+
+**Goal**: Create one AI-ready step guide per scenario.
+
+### What Makes a Step Guide?
+
+Step guides are **the finished product** of context engineering:
+
+- Structured, step-by-step instructions
+- Written for AI consumption
+- Clear decision points and branches
+- Consistent formatting
+
+### One Guide Per Scenario
+
+Each scenario gets exactly one step guide. This 1:1 relationship ensures:
+- No ambiguity about which guide applies
+- Easy updates and versioning
+- Clear accountability
+
+### Currently Manual
+
+Today, writing step guides is a manual process. You reference the mapped knowledge and write clear procedures.
+
+<Note>
+Future versions of XOOS will offer AI-assisted guide writing based on your mapped knowledge.
+</Note>
+
+[Learn more about Writing Step Guides →](/step-guides/writing)
+
+## Phase 5: Maintain
+
+**Goal**: Keep your context current through versioning.
+
+### Versioning
+
+Step guides support version control:
+- Create new versions when processes change
+- Add version comments explaining changes
+- Historical versions are preserved
+
+### Ongoing Process
+
+Context engineering isn't one-and-done. As processes change:
+1. Update the relevant step guides
+2. Create new versions with clear notes
+3. AI agents automatically use the current version
+
+[Learn more about Versioning →](/step-guides/versioning)
+
+## The Full Picture
+
+When you complete this process, you have:
+
+```
+Knowledge Section
+├── All raw materials collected and categorized
+│
+Hierarchy
+├── Workstream: Customer Support
+│   ├── Contact Driver: Order Issues
+│   │   ├── Scenario: Cancel Order → Step Guide v2
+│   │   ├── Scenario: Modify Order → Step Guide v1
+│   │   └── Scenario: Track Order → Step Guide v3
+│   │
+│   └── Contact Driver: Returns
+│       ├── Scenario: Start Return → Step Guide v1
+│       └── Scenario: Check Status → Step Guide v1
+```
+
+AI agents can now navigate this structure and use the appropriate step guide for any situation.
