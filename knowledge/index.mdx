@@ -1,0 +1,136 @@
+---
+title: "Knowledge Base Overview"
+description: "Understanding the XOOS knowledge base and document management"
+---
+
+# Knowledge Base
+
+The knowledge base stores reference materials that support your AI agents and support team. Unlike step guides (which are procedural), knowledge documents are informational resources that provide context, policies, and answers.
+
+## What is the Knowledge Base?
+
+The knowledge base contains:
+
+- **Support Articles** - Customer-facing help content
+- **SOPs** - Standard operating procedures
+- **Policies** - Company guidelines and rules
+- **Templates** - Response templates and scripts
+- **Other** - Any additional reference material
+
+## Knowledge vs. Step Guides
+
+| Knowledge Documents | Step Guides |
+|---------------------|-------------|
+| Reference material | Procedural instructions |
+| "What is the policy?" | "How do I handle this?" |
+| Multiple can apply | One per sub-scenario |
+| Background context | Active guidance |
+
+Both work together: step guides reference knowledge documents when agents need additional context.
+
+## Document Types
+
+### Support Articles
+
+Customer-facing content that explains products, features, or common questions.
+
+**Use for:**
+- Product documentation
+- Feature explanations
+- How-to guides for customers
+- Troubleshooting help
+
+### SOPs (Standard Operating Procedures)
+
+Internal procedures for specific operations.
+
+**Use for:**
+- Escalation procedures
+- Verification processes
+- Quality standards
+- Compliance requirements
+
+### Policies
+
+Official company guidelines and rules.
+
+**Use for:**
+- Return policies
+- Refund guidelines
+- Privacy practices
+- Terms of service
+
+### Templates
+
+Pre-written content for common situations.
+
+**Use for:**
+- Email templates
+- Chat scripts
+- Apology messages
+- Follow-up communications
+
+## Creating Documents
+
+Documents can be created two ways:
+
+1. **Editor** - Write content directly in XOOS using the rich text editor
+2. **File Upload** - Upload existing documents (PDF, etc.)
+
+[Learn more about creating documents](/knowledge/documents)
+
+## Document Visibility
+
+Documents have visibility settings:
+
+| Visibility | Description |
+|------------|-------------|
+| **Internal** | Only for agents and internal use |
+| **Public** | Can be shared with or shown to customers |
+
+## Organization
+
+### Categories
+
+Documents are organized by category:
+- Support Article
+- SOP
+- Policy
+- Template
+- Other
+
+### Tags
+
+Add tags for easy filtering and search:
+- Product names
+- Topics
+- Teams
+- Urgency levels
+
+### Search
+
+Find documents by:
+- Title search
+- Content search
+- Category filter
+- Tag filter
+
+## Using Knowledge in Context
+
+Knowledge documents are linked to sub-scenarios:
+
+```
+Sub-Scenario: Process Return
+├── Step Guide: Return Processing Steps
+└── Knowledge:
+    ├── Return Policy
+    ├── Refund Timeline
+    └── Exception Handling Guidelines
+```
+
+When an AI agent handles this scenario, it has access to both the procedural steps and the reference materials.
+
+## Next Steps
+
+- [Creating Documents](/knowledge/documents) - Write new knowledge content
+- [Uploading Files](/knowledge/file-uploads) - Add existing documents

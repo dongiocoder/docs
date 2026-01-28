@@ -1,0 +1,102 @@
+---
+title: "Workstream Metrics"
+description: "Understanding and tracking workstream performance metrics"
+---
+
+# Workstream Metrics
+
+XOOS tracks key performance indicators (KPIs) at the workstream level to help you understand and optimize your support operations.
+
+## Available Metrics
+
+### Volume
+
+The number of contacts handled by this workstream.
+
+- Typically measured monthly
+- Can be aggregated from contact drivers
+- Helps with capacity planning
+
+### Average Handle Time (AHT)
+
+The average time to resolve a contact, displayed as a duration (e.g., "4m 32s").
+
+**Components:**
+- Talk/response time
+- Hold time
+- After-contact work
+
+### First Contact Resolution (FCR)
+
+Percentage of contacts resolved on the first interaction without follow-up.
+
+**Target:** Most organizations aim for 70-80% FCR.
+
+### Customer Satisfaction (CSAT)
+
+Customer satisfaction score, typically collected via post-interaction surveys.
+
+**Scale:** Usually 1-5 or 1-100, displayed as a percentage.
+
+### QA Score
+
+Quality assurance score based on internal evaluation of agent performance.
+
+**Evaluates:**
+- Accuracy of information provided
+- Adherence to procedures
+- Communication quality
+
+### Cost Per Interaction
+
+The average cost to handle a single contact in this workstream.
+
+**Calculated from:**
+- Labor costs
+- Platform costs
+- Overhead allocation
+
+## Viewing Metrics
+
+Metrics appear in the workstream table and detail views:
+
+| Metric | Column | Format |
+|--------|--------|--------|
+| Volume | Volume | Number |
+| AHT | AHT | Duration (e.g., "4m 32s") |
+| FCR | FCR | Percentage |
+| CSAT | CSAT | Percentage |
+| QA Score | QA Score | Percentage |
+| Cost | Cost/Interaction | Currency |
+
+## Editing Metrics
+
+To update workstream metrics:
+
+1. Click on a workstream to open its details
+2. Navigate to the **Metrics** section
+3. Click **Edit** or use inline editing
+4. Update the values
+5. Save changes
+
+<Note>
+Metrics are currently entered manually. Future versions will support automated metric imports from connected CX platforms.
+</Note>
+
+## Metrics Rollup
+
+Workstream metrics can be calculated from contact driver data:
+
+```
+Workstream Volume = Sum of all Contact Driver Volumes
+Workstream AHT = Weighted average of Contact Driver AHTs
+```
+
+## Using Metrics
+
+Metrics help you:
+
+- **Identify problem areas** - High AHT or low CSAT indicates issues
+- **Prioritize improvements** - Focus on high-volume, low-performing areas
+- **Track AI impact** - Compare metrics before and after AI deployment
+- **Plan capacity** - Use volume trends for staffing decisions

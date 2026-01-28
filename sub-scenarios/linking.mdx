@@ -1,0 +1,128 @@
+---
+title: "Linking Sub-Scenarios"
+description: "How to link sub-scenarios to step guides and knowledge documents"
+---
+
+# Linking Sub-Scenarios
+
+Sub-scenarios become powerful when linked to step guides and knowledge documents. These links tell AI agents exactly what procedures to follow and what information to reference.
+
+## Linking Step Guides
+
+### Why Link Step Guides?
+
+Step guides provide procedural instructions for handling each sub-scenario. When an AI agent identifies a sub-scenario, it retrieves the linked step guide to:
+
+- Follow correct procedures
+- Apply proper policies
+- Use appropriate language
+- Know when to escalate
+
+### How to Link a Step Guide
+
+1. Open the sub-scenario detail page
+2. Find the **Step Guide** section
+3. Click **Link Step Guide**
+4. Search or browse available guides
+5. Select the appropriate guide
+6. Click **Confirm**
+
+### One-to-One Relationship
+
+Each sub-scenario links to exactly one step guide. This ensures:
+
+- Clear, unambiguous procedures
+- Consistent handling across agents
+- Easy maintenance and updates
+
+<Note>
+If a step guide applies to multiple sub-scenarios, that's fine—the same guide can be linked from different sub-scenarios. But each sub-scenario only points to one guide.
+</Note>
+
+### Unlinking a Step Guide
+
+To change or remove a step guide link:
+
+1. Open the sub-scenario
+2. Click the linked guide's **Unlink** button
+3. Confirm the action
+4. Optionally link a different guide
+
+## Linking Knowledge Documents
+
+### Why Link Knowledge Documents?
+
+Knowledge documents provide reference information that supports the step guide:
+
+- Policies and guidelines
+- Product specifications
+- FAQs and troubleshooting
+- Templates and scripts
+
+### How to Link Knowledge Documents
+
+1. Open the sub-scenario detail page
+2. Find the **Knowledge Documents** section
+3. Click **Link Document**
+4. Search or browse available documents
+5. Select one or more documents
+6. Click **Add**
+
+### Many-to-Many Relationship
+
+Unlike step guides, sub-scenarios can link to multiple knowledge documents, and documents can be linked from multiple sub-scenarios.
+
+```
+Sub-Scenario: Cancel Order
+├── Knowledge: Return Policy
+├── Knowledge: Refund Processing Times
+└── Knowledge: Order Status FAQ
+
+Sub-Scenario: Request Refund
+├── Knowledge: Return Policy (same document)
+├── Knowledge: Refund Processing Times (same document)
+└── Knowledge: Partial Refund Guidelines
+```
+
+### Managing Linked Documents
+
+To remove a knowledge document link:
+
+1. Open the sub-scenario
+2. Find the document in the linked list
+3. Click the **Remove** or **Unlink** button
+4. Confirm the action
+
+## How AI Agents Use Links
+
+When handling a customer inquiry:
+
+1. **Identify Sub-Scenario** - Agent determines the specific situation
+2. **Retrieve Step Guide** - Agent loads the linked procedural guide
+3. **Load Knowledge** - Agent accesses linked reference documents
+4. **Process Inquiry** - Agent follows steps, referencing knowledge as needed
+
+This ensures accurate, consistent responses based on your documented procedures.
+
+## Best Practices
+
+### Step Guide Linking
+
+- **Always link a guide** - Every sub-scenario should have procedural guidance
+- **Keep guides focused** - One guide per scenario works best
+- **Update links when guides change** - If you archive a guide, update affected sub-scenarios
+
+### Knowledge Document Linking
+
+- **Link relevant documents only** - Don't overload with tangentially related content
+- **Prioritize by usefulness** - Link the most commonly needed references
+- **Review periodically** - Remove links to outdated documents
+
+### Verification
+
+After linking:
+
+1. Open the sub-scenario detail view
+2. Verify the step guide appears correctly
+3. Check all knowledge documents are listed
+4. Test with a sample inquiry (if AI testing is available)

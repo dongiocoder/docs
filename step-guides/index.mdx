@@ -1,0 +1,148 @@
+---
+title: "Step Guides Overview"
+description: "Understanding step guides and their role in AI agent context"
+---
+
+# Step Guides
+
+Step guides are procedural documents that provide step-by-step instructions for handling specific scenarios. They are the primary source of guidance for AI agents when helping customers.
+
+## What is a Step Guide?
+
+A step guide tells an agent (human or AI) exactly how to handle a situation:
+
+- Step-by-step instructions
+- Decision points and branches
+- Scripts and language to use
+- Escalation criteria
+- Related information to reference
+
+## Step Guides vs. Knowledge Documents
+
+| Step Guides | Knowledge Documents |
+|-------------|---------------------|
+| Procedural | Informational |
+| "Do this, then this" | "Here's the policy" |
+| Linked 1:1 to sub-scenarios | Linked many-to-many |
+| Versioned | Not versioned |
+| Active guidance | Reference material |
+
+## Key Features
+
+### Versioning
+
+Step guides support full version control:
+
+- Track changes over time
+- Add version comments explaining updates
+- View historical versions
+- Maintain audit trail
+
+[Learn more about versioning](/step-guides/versioning)
+
+### Rich Content
+
+The step guide editor supports:
+
+- Formatted text (bold, italic, lists)
+- Headings and structure
+- Tables for decision matrices
+- Links to other resources
+- Code blocks for technical content
+
+### Linking
+
+Each step guide can be linked to sub-scenarios:
+
+```
+Step Guide: Password Reset Process
+└── Linked Sub-Scenarios:
+    ├── Forgot Password
+    ├── Password Expired
+    └── Locked Account
+```
+
+## Step Guide Structure
+
+A well-structured step guide includes:
+
+### Title
+
+Clear, action-oriented title describing what the guide covers.
+
+**Examples:**
+- "Processing Customer Returns"
+- "Troubleshooting Login Issues"
+- "Handling Subscription Cancellations"
+
+### Description
+
+Brief summary of when to use this guide and what it covers.
+
+### Content
+
+The main instructional content, typically organized as:
+
+```
+## Prerequisites
+What you need before starting
+
+## Steps
+1. First step
+2. Second step
+3. Third step
+
+## Decision Points
+### If [condition]
+- Take action A
+
+### If [other condition]
+- Take action B
+
+## Escalation
+When and how to escalate
+
+## Related Resources
+Links to policies, tools, etc.
+```
+
+## Viewing Step Guides
+
+Navigate to **Knowledge** > **Step Guides** to see all guides.
+
+The list shows:
+- Title and description
+- Current version
+- Last updated date
+- Status (active/inactive)
+
+## How AI Agents Use Step Guides
+
+When an AI agent identifies a sub-scenario:
+
+1. **Retrieves linked step guide** - Gets the current version
+2. **Follows the structure** - Uses steps as procedural guidance
+3. **Makes decisions** - Uses decision points to branch
+4. **References knowledge** - Links to additional context
+5. **Knows when to escalate** - Follows escalation criteria
+
+## Best Practices
+
+### Writing Effective Guides
+
+- **Be specific** - Include exact steps, not vague directions
+- **Cover edge cases** - Address common variations
+- **Use consistent language** - Match your support tone
+- **Keep it current** - Update when processes change
+
+### Organization
+
+- One guide per procedure
+- Link to multiple sub-scenarios if appropriate
+- Cross-reference related guides
+- Archive outdated guides
+
+## Next Steps
+
+- [Creating Step Guides](/step-guides/creating)
+- [Version Management](/step-guides/versioning)

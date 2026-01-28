@@ -1,0 +1,141 @@
+---
+title: "Creating Documents"
+description: "How to create and manage knowledge documents in XOOS"
+---
+
+# Creating Documents
+
+This guide covers creating knowledge documents using the XOOS editor.
+
+## Creating a New Document
+
+1. Navigate to **Knowledge** > **Documents**
+2. Click **Create Document**
+3. Fill in the metadata
+4. Write your content
+5. Click **Save**
+
+## Document Metadata
+
+### Title
+
+A clear, descriptive title for the document.
+
+**Best practices:**
+- Be specific: "30-Day Return Policy" not "Returns"
+- Use searchable terms
+- Keep it concise but informative
+
+### Slug
+
+URL-friendly identifier (auto-generated from title, can be customized).
+
+### Category
+
+Select the document type:
+
+| Category | Use For |
+|----------|---------|
+| Support Article | Customer-facing help content |
+| SOP | Internal procedures |
+| Policy | Official guidelines |
+| Template | Pre-written responses |
+| Other | Everything else |
+
+### Visibility
+
+- **Internal** - For agents only
+- **Public** - Can be shared with customers
+
+### Tags
+
+Add keywords for organization and search:
+
+```
+Examples: "returns", "billing", "premium-tier", "urgent"
+```
+
+## Writing Content
+
+The document editor supports rich text formatting:
+
+### Text Formatting
+
+- **Bold** and *italic* text
+- Headings (H1, H2, H3)
+- Bullet and numbered lists
+- Links
+
+### Structured Content
+
+- Tables for data
+- Blockquotes for important callouts
+- Code blocks for technical content
+- Horizontal rules for sections
+
+### Best Practices
+
+**Clear structure:**
+```markdown
+# Policy Title
+
+## Overview
+Brief summary of what this policy covers.
+
+## Details
+### When This Applies
+Specific situations...
+
+### Exceptions
+Special cases...
+
+## Related Information
+Links to other resources...
+```
+
+**Scannable content:**
+- Use headings to break up sections
+- Use bullet points for lists
+- Bold key terms
+- Keep paragraphs short
+
+**Accurate information:**
+- Verify facts before publishing
+- Include effective dates for policies
+- Note any regional variations
+- Update when information changes
+
+## Editing Documents
+
+1. Find the document in the list
+2. Click to open
+3. Click **Edit**
+4. Make changes
+5. Click **Save**
+
+## Document Status
+
+Documents don't have a draft/published workflow—they're immediately available once saved. To control visibility:
+
+- Use the **Visibility** setting (Internal/Public)
+- Don't link unfinished documents to sub-scenarios
+
+## Deleting Documents
+
+<Warning>
+Deleting a document removes it permanently and breaks any links to sub-scenarios.
+</Warning>
+
+To delete:
+1. Open the document
+2. Click the dropdown menu
+3. Select **Delete**
+4. Confirm the action
+
+## Version History
+
+Currently, documents don't maintain version history. For versioned content, consider using [Step Guides](/step-guides/index) which support full version tracking.
+
+<Tip>
+For critical policy documents that need version control, create them as step guides instead. Step guides support versioning with change comments.
+</Tip>

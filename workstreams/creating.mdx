@@ -1,0 +1,96 @@
+---
+title: "Creating Workstreams"
+description: "How to create and configure workstreams in XOOS"
+---
+
+# Creating Workstreams
+
+This guide covers how to create and configure workstreams in XOOS.
+
+## Creating a New Workstream
+
+1. Navigate to **Context Engineering** > **Workstreams**
+2. Click the **Create Workstream** button
+3. Fill in the required fields
+4. Click **Create**
+
+## Required Fields
+
+### Name
+
+A descriptive name that identifies the workstream.
+
+**Best practices:**
+- Be specific: "Warby Parker Chat Support" not just "Chat"
+- Include the channel: "Email Support Queue"
+- Keep it concise but clear
+
+### Type
+
+Select the workstream type:
+
+| Type | When to Use |
+|------|-------------|
+| Inbound | Customer reaches out to you |
+| Outbound | You reach out to customer |
+| Background | Automated/scheduled tasks |
+
+### Channel
+
+The communication channel this workstream handles:
+
+- Chat
+- Email
+- Voice
+- Messaging
+- Social
+
+## Optional Fields
+
+### Platform
+
+Connect to a CX platform for metrics and routing:
+
+- Zendesk
+- Intercom
+- Gladly
+- Salesforce
+- Freshdesk
+
+### Description
+
+Add context about what this workstream handles and any special considerations.
+
+## After Creation
+
+Once created, you can:
+
+1. **Add Contact Drivers** - Define the reasons customers contact this workstream
+2. **Configure Metrics** - Set up KPI tracking
+3. **Link to AI Agents** - Connect this context to your agents
+
+## Editing Workstreams
+
+To edit an existing workstream:
+
+1. Click the workstream row in the table
+2. Use the dropdown menu (three dots) and select **Edit**
+3. Make your changes
+4. Click **Save**
+
+## Deactivating Workstreams
+
+Deactivating a workstream:
+
+- Hides it from active views
+- Preserves all data and history
+- Removes it from AI agent context
+
+To deactivate:
+1. Open the workstream dropdown menu
+2. Select **Deactivate**
+3. Confirm the action
+
+<Warning>
+Deactivating a workstream will remove its context from any connected AI agents. Make sure to update your agent configurations accordingly.
+</Warning>

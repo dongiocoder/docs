@@ -1,0 +1,190 @@
+---
+title: "Creating Step Guides"
+description: "How to create effective step guides in XOOS"
+---
+
+# Creating Step Guides
+
+This guide covers how to create step guides that effectively guide AI agents and human support staff.
+
+## Creating a New Step Guide
+
+1. Navigate to **Knowledge** > **Step Guides**
+2. Click **Create Step Guide**
+3. Fill in the metadata
+4. Write your content
+5. Click **Save**
+
+## Required Fields
+
+### Title
+
+A clear, action-oriented title.
+
+**Good titles:**
+- "Processing Return Requests"
+- "Resolving Login Authentication Errors"
+- "Handling Billing Disputes"
+
+**Avoid:**
+- "Returns" (too vague)
+- "Steps" (not descriptive)
+- "How to process return requests for customers who want to return items they purchased" (too long)
+
+### Description
+
+A brief summary (1-2 sentences) explaining:
+- When this guide applies
+- What the outcome should be
+
+```
+Example: "Use this guide when a customer wants to return a product.
+Covers both within-window and exception returns."
+```
+
+### Content
+
+The main instructional content using the rich text editor.
+
+## Writing Effective Content
+
+### Structure Template
+
+```markdown
+## Overview
+Brief context about this procedure.
+
+## Prerequisites
+- Access to [system]
+- Customer verification completed
+- [Other requirements]
+
+## Steps
+
+### Step 1: [Action]
+Detailed instructions for the first step.
+
+### Step 2: [Action]
+Detailed instructions for the second step.
+
+### Step 3: [Decision Point]
+Evaluate [condition]:
+
+**If [option A]:**
+- Take action X
+- Proceed to Step 4
+
+**If [option B]:**
+- Take action Y
+- Skip to Step 5
+
+### Step 4: [Action]
+Continue with instructions...
+
+## Escalation Criteria
+Escalate to [team/person] when:
+- [Condition 1]
+- [Condition 2]
+
+## Related Resources
+- [Policy Name](/knowledge/policy-slug)
+- [Other Guide](/step-guides/other-guide)
+```
+
+### Best Practices
+
+#### Be Explicit
+
+**Good:**
+```
+1. Open the customer's order in Shopify
+2. Click "More Actions" > "Cancel Order"
+3. Select the reason: "Customer Request"
+4. Check "Refund payment"
+5. Click "Cancel Order"
+```
+
+**Bad:**
+```
+1. Cancel the order in the system
+2. Process the refund
+```
+
+#### Include Decision Logic
+
+```markdown
+### Determine Refund Amount
+
+**Full Refund** - When:
+- Original packaging is intact
+- Within 30-day window
+- No signs of use
+
+**Partial Refund (80%)** - When:
+- Packaging opened but item unused
+- Within 30-day window
+
+**No Refund** - When:
+- Outside return window
+- Item shows signs of use
+- Refer to supervisor for exceptions
+```
+
+#### Provide Language Examples
+
+```markdown
+### Confirming with Customer
+
+Use this language:
+> "I've processed your return request. You'll receive a full refund
+> of $[amount] within 3-5 business days. Is there anything else
+> I can help you with today?"
+```
+
+#### Specify Escalation Clearly
+
+```markdown
+## When to Escalate
+
+**Escalate immediately to Supervisor if:**
+- Refund amount exceeds $500
+- Customer threatens legal action
+- Return involves safety issue
+
+**Escalate to Returns Team if:**
+- Item is from a restricted category
+- International return with customs issues
+```
+
+## Using the Editor
+
+The step guide editor supports:
+
+| Feature | Use |
+|---------|-----|
+| Headings | Organize sections (H2, H3) |
+| Bold | Emphasize key terms |
+| Lists | Step sequences, options |
+| Tables | Decision matrices |
+| Links | Reference other content |
+| Blockquotes | Sample language |
+
+## Saving and Publishing
+
+Step guides save as the "current" version immediately. There's no draft state—saved content is immediately available.
+
+To prepare content without making it live:
+1. Write in a separate document first
+2. Don't link to sub-scenarios until ready
+3. Or mark as inactive until complete
+
+## After Creation
+
+Once saved:
+
+1. **Link to sub-scenarios** - Connect the guide to relevant scenarios
+2. **Test with AI** - If available, test how the agent uses the guide
+3. **Get feedback** - Have team members review
+4. **Iterate** - Make updates based on real usage
+
+[Learn about versioning](/step-guides/versioning) for how to track changes over time.

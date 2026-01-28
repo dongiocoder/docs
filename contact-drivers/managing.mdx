@@ -1,0 +1,133 @@
+---
+title: "Managing Contact Drivers"
+description: "How to create, edit, and organize contact drivers"
+---
+
+# Managing Contact Drivers
+
+This guide covers creating, editing, and organizing contact drivers in XOOS.
+
+## Creating a Contact Driver
+
+### From the Workstream Detail Page
+
+1. Navigate to a workstream detail page
+2. Click the **Contact Drivers** tab
+3. Click **Add Contact Driver**
+4. Fill in the required fields
+5. Click **Create**
+
+### Required Fields
+
+#### Name
+
+A clear, concise identifier for the contact reason.
+
+**Examples:**
+- Order Cancellation
+- Password Reset
+- Subscription Changes
+- Return Request
+
+#### Description
+
+A detailed explanation that helps identify when this contact driver applies.
+
+**Include:**
+- What the customer is trying to accomplish
+- Common variations of this request
+- Any distinguishing characteristics
+
+```
+Example: "Customer wants to return a product they purchased.
+May be within or outside the return window. Could be due to
+defect, wrong item, or change of mind."
+```
+
+### Optional Fields
+
+#### Integrations
+
+Select systems involved in handling this contact type:
+
+- CRM systems (Salesforce, HubSpot)
+- Order management (Shopify, WooCommerce)
+- Payment processors (Stripe, Square)
+- Authentication (Auth0, Okta)
+- Communication (Slack, Teams)
+
+#### Metrics
+
+Enter performance data:
+
+| Metric | Description |
+|--------|-------------|
+| Volume | Monthly contact count |
+| AHT | Average handle time |
+| FCR | First contact resolution rate |
+| CSAT | Customer satisfaction score |
+| QA Score | Quality assurance score |
+| Cost | Cost per interaction |
+
+## Editing Contact Drivers
+
+1. Open the contact driver (click the row or use the view action)
+2. Click **Edit** or use the dropdown menu
+3. Make changes
+4. Click **Save**
+
+## Organizing Contact Drivers
+
+### Within a Workstream
+
+Contact drivers are listed under their parent workstream. To reorganize:
+
+1. Consider whether a contact driver belongs to a different workstream
+2. Create a new contact driver in the correct workstream
+3. Migrate sub-scenarios if needed
+4. Deactivate the old contact driver
+
+### Merging Contact Drivers
+
+If two contact drivers are too similar:
+
+1. Decide which one to keep
+2. Move sub-scenarios from the other
+3. Update the description to cover both cases
+4. Deactivate the redundant contact driver
+
+### Splitting Contact Drivers
+
+If a contact driver is too broad:
+
+1. Create new, more specific contact drivers
+2. Distribute sub-scenarios appropriately
+3. Write focused descriptions for each
+4. Deactivate the original if empty
+
+## Deactivating Contact Drivers
+
+Deactivating preserves data but removes the contact driver from:
+
+- Active views
+- AI agent context
+- Metric calculations
+
+To deactivate:
+1. Open the contact driver dropdown menu
+2. Select **Deactivate**
+3. Confirm the action
+
+<Warning>
+Deactivating a contact driver also affects its sub-scenarios. AI agents will no longer use this context for customer interactions.
+</Warning>
+
+## Contact Driver Metrics
+
+Metrics at the contact driver level help identify:
+
+- **High volume** areas needing automation
+- **High AHT** processes needing optimization
+- **Low CSAT** experiences needing improvement
+
+Update metrics regularly for accurate insights.

@@ -1,0 +1,161 @@
+---
+title: "Step Guide Versioning"
+description: "Managing versions and change history for step guides"
+---
+
+# Step Guide Versioning
+
+Step guides support full version control, allowing you to track changes, maintain history, and ensure AI agents always use the correct procedures.
+
+## How Versioning Works
+
+### Version States
+
+| State | Description |
+|-------|-------------|
+| **Current** | The active, editable version |
+| **Historical** | Frozen snapshots of previous versions |
+
+- Only the **current** version can be edited
+- **Historical** versions are read-only records
+- Sub-scenarios always link to the current version
+
+### Version Numbers
+
+Versions are numbered sequentially: v1, v2, v3, etc.
+
+```
+Step Guide: Return Processing
+├── v3 (current) - Active, editable
+├── v2 (historical) - Frozen
+└── v1 (historical) - Frozen
+```
+
+## Creating a New Version
+
+When you make significant changes to a step guide, you create a new version:
+
+1. Open the step guide
+2. Click **Edit**
+3. Make your changes
+4. Click **Save as New Version**
+5. Add a **version comment** explaining the changes
+6. Click **Confirm**
+
+### Version Comments
+
+Version comments are required and should explain what changed:
+
+**Good comments:**
+- "Updated refund process to include new 45-day window policy"
+- "Added escalation criteria for high-value orders"
+- "Fixed incorrect step 3 instructions for Shopify integration"
+
+**Poor comments:**
+- "Updates"
+- "Fixed"
+- "Changes"
+
+## Viewing Version History
+
+To see all versions of a step guide:
+
+1. Open the step guide
+2. Click **Version History** or the version indicator
+3. Browse the list of versions
+4. Click any version to view its content
+
+The history shows:
+- Version number
+- Version comment
+- Created by (user)
+- Created date
+
+## Comparing Versions
+
+To understand what changed between versions:
+
+1. Open Version History
+2. Select a historical version
+3. Compare content side-by-side with current
+4. Or view the version comment for summary
+
+## When to Create New Versions
+
+**Create a new version when:**
+- Changing the actual procedure or steps
+- Updating policy-related content
+- Correcting significant errors
+- Adding new decision paths
+
+**Don't create a new version for:**
+- Fixing typos
+- Minor rewording without meaning change
+- Formatting adjustments
+
+Minor edits update the current version without creating history.
+
+## Restoring Previous Versions
+
+If you need to revert to a previous version:
+
+1. Open Version History
+2. Find the desired version
+3. Click **Restore**
+4. Add a version comment (e.g., "Reverted to v2 due to policy rollback")
+5. Confirm
+
+This creates a new version with the previous content—it doesn't delete the current version.
+
+## Version Audit Trail
+
+Each version records:
+
+| Field | Description |
+|-------|-------------|
+| Version Number | Sequential identifier |
+| Version Comment | Explanation of changes |
+| Created At | When this version was created |
+| Created By | User who created the version |
+| Updated At | Last edit to this version |
+| Updated By | User who last edited |
+
+This provides a complete audit trail for compliance and quality assurance.
+
+## Impact on AI Agents
+
+When a new version is created:
+
+- Sub-scenarios automatically use the new version
+- No relinking required
+- AI agents immediately use updated content
+
+<Note>
+After creating a significant new version, consider testing with your AI agents to ensure the updated procedures work correctly.
+</Note>
+
+## Best Practices
+
+### Regular Updates
+
+- Review step guides quarterly
+- Update when processes change
+- Archive guides that are no longer relevant
+
+### Clear Comments
+
+- Write comments for your future self
+- Include context about why changes were made
+- Reference related changes (policy updates, system changes)
+
+### Version Discipline
+
+- Don't create excessive versions for minor edits
+- Do create versions for any meaningful procedural change
+- Keep the current version accurate and up-to-date
+
+### Team Coordination
+
+- Communicate version updates to your team
+- Consider a review process for significant changes
+- Document who is responsible for maintaining each guide
